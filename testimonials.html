@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read real reviews from 1000+ students placed by MBBS Education Orbit Fly in top Russian medical universities. 5-star Google rating, genuine success stories." />
+  <meta property="og:title" content="Student Testimonials | MBBS Education Orbit Fly" />
+  <meta property="og:description" content="Real student success stories — 1000+ MBBS students placed in Russia with 5-star reviews. Read honest testimonials and see our featured students." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:type" content="website" />
+  <title>Student Testimonials | MBBS Education Orbit Fly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Poppins','sans-serif'],serif:['"Playfair Display"','Georgia','serif']}}}}</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-gray-300 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
+      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+        <a href="tel:+919410494695" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-solid fa-phone text-blue-400"></i> +91 9410494695</a>
+        <span class="text-gray-600 hidden sm:inline">|</span>
+        <a href="mailto:mbbseducationorbitfly@gmail.com" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-solid fa-envelope text-blue-400"></i> mbbseducationorbitfly@gmail.com</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="https://www.facebook.com/MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-6 h-6 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-600 transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="font-size:10px"></i></a>
+        <a href="https://www.instagram.com/mbbs_education_orbit_fly" target="_blank" rel="noopener" class="w-6 h-6 flex items-center justify-center rounded-full bg-white/10 hover:bg-pink-600 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram" style="font-size:10px"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex-shrink-0"><img src="assets/logo.png" alt="MBBS Education Orbit Fly" class="h-11 lg:h-14 w-auto object-contain" id="nav-logo" /></a>
+        <div class="hidden lg:flex items-center gap-0.5">
+          <a href="index.html"        class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Home</a>
+          <a href="about.html"        class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">About</a>
+          <a href="why-russia.html"   class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Why Russia</a>
+          <a href="universities.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Universities</a>
+          <a href="process.html"      class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Process</a>
+          <a href="services.html"     class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Services</a>
+          <a href="testimonials.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Testimonials</a>
+          <a href="contact.html"      class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Contact</a>
+        </div>
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="assets/brochure.pdf" target="_blank" rel="noopener" class="px-4 py-2 text-sm font-medium text-blue-900 border border-blue-200 rounded-lg hover:bg-blue-50 transition-colors"><i class="fa-solid fa-download mr-1 text-xs"></i>Brochure</a>
+          <button onclick="openModal()" class="px-5 py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-lg hover:bg-blue-800 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">Apply Now &rarr;</button>
+        </div>
+        <button id="menu-btn" class="lg:hidden p-2 rounded-md text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition-colors" aria-label="Toggle menu">
+          <i id="icon-open" class="fa-solid fa-bars text-xl"></i>
+          <i id="icon-close" class="fa-solid fa-xmark text-xl hidden"></i>
+        </button>
+      </div>
+      <div id="mobile-menu" class="lg:hidden overflow-hidden border-t border-gray-100 bg-white" style="max-height:0;transition:max-height .35s ease">
+        <div class="py-3 space-y-0.5">
+          <a href="index.html"        class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Home</a>
+          <a href="about.html"        class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">About</a>
+          <a href="why-russia.html"   class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Why Russia</a>
+          <a href="universities.html" class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Universities</a>
+          <a href="process.html"      class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Process</a>
+          <a href="services.html"     class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Services</a>
+          <a href="testimonials.html" class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Testimonials</a>
+          <a href="contact.html"      class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Contact</a>
+          <div class="px-4 pt-3 pb-4 flex flex-col gap-2">
+            <a href="assets/brochure.pdf" target="_blank" rel="noopener" class="block text-center py-2.5 border border-blue-200 text-blue-900 text-sm font-medium rounded-xl hover:bg-blue-50 transition-colors">Download Brochure</a>
+            <button onclick="openModal();closeMobileMenu()" class="w-full text-center py-3 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-colors shadow-sm">Apply Now &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero text-center">
+    <div class="page-hero-blob" style="width:380px;height:380px;top:-100px;right:-80px;background:rgba(37,99,235,.15)"></div>
+    <div class="page-hero-blob" style="width:260px;height:260px;bottom:-50px;left:-40px;background:rgba(245,158,11,.1)"></div>
+    <div class="relative z-10 max-w-3xl mx-auto" data-aos="fade-up">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep"><i class="fa-solid fa-chevron-right text-[9px]"></i></span>
+        <span class="current">Testimonials</span>
+      </nav>
+      <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+        Real Stories,<br/><span class="text-yellow-400">Real Doctors</span>
+      </h1>
+      <p class="text-blue-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
+        Over 1000 students have trusted us with their medical careers. Here's what they and their parents have to say.
+      </p>
+    </div>
+  </section>
+
+  <!-- GOOGLE RATING BANNER -->
+  <section class="py-14 bg-gradient-to-r from-blue-900 to-blue-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-4 gap-8 text-center text-white" data-aos="fade-up">
+        <div>
+          <div class="flex justify-center mb-2">
+            <i class="fa-brands fa-google text-4xl text-white"></i>
+          </div>
+          <div class="text-4xl font-bold mb-1">5.0</div>
+          <div class="flex justify-center gap-0.5 mb-1">
+            <i class="fa-solid fa-star text-yellow-400 text-sm"></i><i class="fa-solid fa-star text-yellow-400 text-sm"></i><i class="fa-solid fa-star text-yellow-400 text-sm"></i><i class="fa-solid fa-star text-yellow-400 text-sm"></i><i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+          </div>
+          <div class="text-blue-200 text-sm">Google Rating</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-1 counter" data-target="1000" data-suffix="+">0</div>
+          <div class="text-blue-200 text-sm mt-3">Students Placed</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-1 counter" data-target="9" data-suffix="">0</div>
+          <div class="text-blue-200 text-sm mt-3">Partner Universities</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-1 counter" data-target="100" data-suffix="%">0</div>
+          <div class="text-blue-200 text-sm mt-3">Visa Success Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER BUTTONS -->
+  <section class="py-8 bg-white border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-2 justify-center" data-aos="fade-up">
+      <button class="test-filter-btn active" data-filter="all">All Reviews</button>
+      <button class="test-filter-btn" data-filter="kbsu">Kabardino-Balkarian Univ.</button>
+      <button class="test-filter-btn" data-filter="tver">Tver State Medical</button>
+      <button class="test-filter-btn" data-filter="yaroslavl">Yaroslavl State Medical</button>
+      <button class="test-filter-btn" data-filter="ivanovo">Ivanovo State Medical</button>
+      <button class="test-filter-btn" data-filter="kazan">Kazan State Medical</button>
+    </div>
+  </section>
+
+  <!-- MASONRY TESTIMONIALS -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-label">Student Reviews</span>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#0a1628] leading-tight">What Our Students Say</h2>
+      </div>
+      <div class="masonry-grid" data-aos="fade-up" data-aos-delay="80">
+
+        <div class="masonry-item test-card-item" data-uni="kbsu">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-1 mb-3"><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i></div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">"I was very confused after getting a low NEET rank. MBBS Education Orbit Fly not only guided me but also handled everything — from documents to airport pickup. I'm now in my 2nd year at Kabardino-Balkarian University and couldn't be happier. Fees are very affordable and professors are excellent."</p>
+            <div class="flex items-center gap-3">
+              <img src="https://picsum.photos/seed/stu1/48/48" alt="Aryan Sharma" class="w-11 h-11 rounded-full object-cover border-2 border-blue-100" loading="lazy" />
+              <div>
+                <div class="font-semibold text-[#0a1628] text-sm">Aryan Sharma</div>
+                <div class="text-xs text-gray-500">KBSU · Year 2 · Meerut, UP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item test-card-item" data-uni="tver">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-1 mb-3"><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i></div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">"The team at MBBS Orbit Fly is amazing. They helped with every single document — apostille, translation, visa form — I just had to show up. I am now studying at Tver State Medical University. The hospital training here is world class. My parents are very satisfied with the choice."</p>
+            <div class="flex items-center gap-3">
+              <img src="https://picsum.photos/seed/stu2/48/48" alt="Priya Gupta" class="w-11 h-11 rounded-full object-cover border-2 border-blue-100" loading="lazy" />
+              <div>
+                <div class="font-semibold text-[#0a1628] text-sm">Priya Gupta</div>
+                <div class="text-xs text-gray-500">Tver SMU · Year 3 · Delhi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item test-card-item" data-uni="yaroslavl">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-1 mb-3"><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i></div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">"I had heard about many fraud consultancies but MBBS Education Orbit Fly was completely transparent. They showed me the actual fee structure upfront with no hidden charges. I'm at Yaroslavl State Medical University and the city is beautiful. Indian food is available in the market nearby."</p>
+            <div class="flex items-center gap-3">
+              <img src="https://picsum.photos/seed/stu3/48/48" alt="Salman Khan" class="w-11 h-11 rounded-full object-cover border-2 border-blue-100" loading="lazy" />
+              <div>
+                <div class="font-semibold text-[#0a1628] text-sm">Salman Ahmed</div>
+                <div class="text-xs text-gray-500">Yaroslavl SMU · Year 1 · Saharanpur</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item test-card-item" data-uni="kbsu">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-1 mb-3"><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i></div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">"As a parent, I was very nervous about sending my daughter abroad for studies. But the team gave us a full tour of the hostel facilities (via video call) and connected us with parents of existing students. That gave us great confidence. My daughter is now in her 4th year and doing wonderfully. We are so grateful to the Orbit Fly team."</p>
+            <div class="flex items-center gap-3">
+              <img src="https://picsum.photos/seed/stu4/48/48" alt="Ramesh Agarwal" class="w-11 h-11 rounded-full object-cover border-2 border-blue-100" loading="lazy" />
+              <div>
+                <div class="font-semibold text-[#0a1628] text-sm">Ramesh Agarwal</div>
+                <div class="text-xs text-gray-500">Parent · KBSU · Agra</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item test-card-item" data-uni="ivanovo">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-1 mb-3"><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i></div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">"The process was so smooth — I enquired in May, got my visa in July, and was in Russia by September. The counsellors were available on WhatsApp at all hours to answer my questions. I'm at Ivanovo State Medical University and the education quality is very high. Strongly recommend Orbit Fly."</p>
+            <div class="flex items-center gap-3">
+              <img src="https://picsum.photos/seed/stu5/48/48" alt="Neha Singh" class="w-11 h-11 rounded-full object-cover border-2 border-blue-100" loading="lazy" />
+              <div>
+                <div class="font-semibold text-[#0a1628] text-sm">Neha Singh</div>
+                <div class="text-xs text-gray-500">Ivanovo SMU · Year 2 · Noida</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item test-card-item" data-uni="kazan">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-1 mb-3"><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i></div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">"I chose Kazan State Medical University on the advice of MBBS Orbit Fly because of its 200-year legacy and the fact that Kazan is a Muslim-friendly city. Halal food is available everywhere. The hostel is very safe and clean. The airport pickup was perfect — a senior Indian student was waiting for me."</p>
+            <div class="flex items-center gap-3">
+              <img src="https://picsum.photos/seed/stu6/48/48" alt="Imran Sheikh" class="w-11 h-11 rounded-full object-cover border-2 border-blue-100" loading="lazy" />
+              <div>
+                <div class="font-semibold text-[#0a1628] text-sm">Imran Sheikh</div>
+                <div class="text-xs text-gray-500">Kazan SMU · Year 1 · Deoband</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item test-card-item" data-uni="tver">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-1 mb-3"><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i></div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">"I cleared FMGE on my first attempt after studying at Tver State Medical University. The FMGE preparation support from Orbit Fly — mock tests, question bank, doubt sessions — was invaluable. I'm now a registered doctor in India. This journey would not have been possible without the Orbit Fly team."</p>
+            <div class="flex items-center gap-3">
+              <img src="https://picsum.photos/seed/stu7/48/48" alt="Dr. Kavya Reddy" class="w-11 h-11 rounded-full object-cover border-2 border-blue-100" loading="lazy" />
+              <div>
+                <div class="font-semibold text-[#0a1628] text-sm">Dr. Kavya Reddy</div>
+                <div class="text-xs text-gray-500">Tver SMU Graduate · NMC Registered · Hyderabad</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item test-card-item" data-uni="yaroslavl">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-1 mb-3"><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i></div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">"The winter in Russia sounded scary before I came, but the hostel is well heated and I adapted quickly. The education at Yaroslavl is world-class. Professors are very supportive. Orbit Fly counsellors checked in with me every month in the first year to make sure I was comfortable. That personal touch is rare."</p>
+            <div class="flex items-center gap-3">
+              <img src="https://picsum.photos/seed/stu8/48/48" alt="Ritu Verma" class="w-11 h-11 rounded-full object-cover border-2 border-blue-100" loading="lazy" />
+              <div>
+                <div class="font-semibold text-[#0a1628] text-sm">Ritu Verma</div>
+                <div class="text-xs text-gray-500">Yaroslavl SMU · Year 3 · Muzaffarnagar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item test-card-item" data-uni="ivanovo">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-1 mb-3"><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i></div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">"I had applied through another agent who gave me wrong information. Luckily I found MBBS Orbit Fly before making a payment. They corrected all the misinformation about fees, documents, and visa process. Their transparency is 100%. I'm now happily studying in Ivanovo in 3rd year."</p>
+            <div class="flex items-center gap-3">
+              <img src="https://picsum.photos/seed/stu9/48/48" alt="Vishal Tomar" class="w-11 h-11 rounded-full object-cover border-2 border-blue-100" loading="lazy" />
+              <div>
+                <div class="font-semibold text-[#0a1628] text-sm">Vishal Tomar</div>
+                <div class="text-xs text-gray-500">Ivanovo SMU · Year 3 · Gwalior</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item test-card-item" data-uni="kbsu">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-1 mb-3"><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i><i class="fa-solid fa-star text-yellow-400 text-xs"></i></div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">"5 stars without doubt. The counsellor Mr. Nek Mohammad sir called us personally and explained everything to my parents in Hindi — which really built our confidence. The total fee he quoted matched exactly what we paid — not a single rupee extra. This kind of honesty is very hard to find in this industry."</p>
+            <div class="flex items-center gap-3">
+              <img src="https://picsum.photos/seed/stu10/48/48" alt="Amir Hussain" class="w-11 h-11 rounded-full object-cover border-2 border-blue-100" loading="lazy" />
+              <div>
+                <div class="font-semibold text-[#0a1628] text-sm">Amir Hussain</div>
+                <div class="text-xs text-gray-500">KBSU · Year 1 · Faridabad</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED STUDENTS GRID -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-label">Our Students</span>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#0a1628] leading-tight">Featured Students (2025 Batch)</h2>
+        <p class="text-gray-600 text-sm mt-3">A snapshot of students we placed in Russian medical universities this year</p>
+      </div>
+      <div class="students-grid" data-aos="fade-up" data-aos-delay="80">
+
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st1/56/56" alt="Aarav Mishra" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Aarav Mishra</div>
+          <div class="text-xs text-gray-500">KBSU · Meerut</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st2/56/56" alt="Zara Khan" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Zara Khan</div>
+          <div class="text-xs text-gray-500">Tver · Delhi</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st3/56/56" alt="Rohit Sharma" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Rohit Sharma</div>
+          <div class="text-xs text-gray-500">Ivanovo · Noida</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st4/56/56" alt="Fatima Siddiqui" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Fatima Siddiqui</div>
+          <div class="text-xs text-gray-500">Kazan · Deoband</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st5/56/56" alt="Rahul Yadav" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Rahul Yadav</div>
+          <div class="text-xs text-gray-500">Yaroslavl · Agra</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st6/56/56" alt="Aisha Malik" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Aisha Malik</div>
+          <div class="text-xs text-gray-500">KBSU · Saharanpur</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st7/56/56" alt="Dev Patel" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Dev Patel</div>
+          <div class="text-xs text-gray-500">Tver · Gwalior</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st8/56/56" alt="Noor Fatima" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Noor Fatima</div>
+          <div class="text-xs text-gray-500">Ivanovo · Indore</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st9/56/56" alt="Arjun Singh" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Arjun Singh</div>
+          <div class="text-xs text-gray-500">Kazan · Muzaffarnagar</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st10/56/56" alt="Pooja Kumari" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Pooja Kumari</div>
+          <div class="text-xs text-gray-500">KBSU · Faridabad</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st11/56/56" alt="Usman Ali" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Usman Ali</div>
+          <div class="text-xs text-gray-500">Yaroslavl · Delhi</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st12/56/56" alt="Sneha Puri" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Sneha Puri</div>
+          <div class="text-xs text-gray-500">Tver · Meerut</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st13/56/56" alt="Mohd Raza" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Mohd Raza</div>
+          <div class="text-xs text-gray-500">Ivanovo · Noida</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st14/56/56" alt="Ananya Tiwari" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Ananya Tiwari</div>
+          <div class="text-xs text-gray-500">Kazan · Agra</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st15/56/56" alt="Yusuf Shaikh" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Yusuf Shaikh</div>
+          <div class="text-xs text-gray-500">KBSU · Indore</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st16/56/56" alt="Divya Nair" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Divya Nair</div>
+          <div class="text-xs text-gray-500">Yaroslavl · Delhi</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st17/56/56" alt="Raunak Jain" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Raunak Jain</div>
+          <div class="text-xs text-gray-500">Tver · Gwalior</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st18/56/56" alt="Saba Ansari" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Saba Ansari</div>
+          <div class="text-xs text-gray-500">Ivanovo · Saharanpur</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st19/56/56" alt="Tushar Mehta" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Tushar Mehta</div>
+          <div class="text-xs text-gray-500">Kazan · Faridabad</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st20/56/56" alt="Rukhsar Begum" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Rukhsar Begum</div>
+          <div class="text-xs text-gray-500">KBSU · Muzaffarnagar</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st21/56/56" alt="Nikhil Gupta" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Nikhil Gupta</div>
+          <div class="text-xs text-gray-500">Yaroslavl · Meerut</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st22/56/56" alt="Ayesha Mirza" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Ayesha Mirza</div>
+          <div class="text-xs text-gray-500">Tver · Noida</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st23/56/56" alt="Suresh Kumar" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Suresh Kumar</div>
+          <div class="text-xs text-gray-500">Ivanovo · Agra</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st24/56/56" alt="Hana Qureshi" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Hana Qureshi</div>
+          <div class="text-xs text-gray-500">Kazan · Delhi</div>
+        </div>
+        <div class="student-card">
+          <img src="https://picsum.photos/seed/st25/56/56" alt="Tanveer Ahmed" loading="lazy" />
+          <div class="font-semibold text-[#0a1628] text-sm">Tanveer Ahmed</div>
+          <div class="text-xs text-gray-500">KBSU · Deoband</div>
+        </div>
+
+      </div>
+      <p class="text-center text-xs text-gray-500 mt-8">Showing 25 of 100+ students placed in 2025. <a href="contact.html" class="text-blue-700 font-medium hover:underline">Contact us to connect with alumni in your city &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- VIDEO PLACEHOLDERS -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-label">Video Testimonials</span>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#0a1628] leading-tight">Watch Student Stories</h2>
+        <p class="text-gray-600 text-sm mt-3">Coming soon — subscribe to our YouTube channel for more</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="80">
+        <div class="relative rounded-2xl overflow-hidden shadow-md group cursor-pointer">
+          <img src="https://picsum.photos/seed/vid1/640/360" alt="Student testimonial video 1" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors">
+            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg"><i class="fa-solid fa-play text-blue-900 text-lg ml-1"></i></div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70">
+            <div class="text-white font-semibold text-sm">Aryan — Year 2 at KBSU</div>
+            <div class="text-gray-300 text-xs">Life at Nalchik, Russia</div>
+          </div>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden shadow-md group cursor-pointer">
+          <img src="https://picsum.photos/seed/vid2/640/360" alt="Student testimonial video 2" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors">
+            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg"><i class="fa-solid fa-play text-blue-900 text-lg ml-1"></i></div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70">
+            <div class="text-white font-semibold text-sm">Dr. Kavya — FMGE Cleared</div>
+            <div class="text-gray-300 text-xs">Her journey from Tver to India</div>
+          </div>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden shadow-md group cursor-pointer">
+          <img src="https://picsum.photos/seed/vid3/640/360" alt="Student testimonial video 3" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-colors">
+            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg"><i class="fa-solid fa-play text-blue-900 text-lg ml-1"></i></div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70">
+            <div class="text-white font-semibold text-sm">Parent Testimonial — Delhi</div>
+            <div class="text-gray-300 text-xs">Father of a KBSU student</div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8" data-aos="fade-up">
+        <a href="https://www.youtube.com/@MBBSEducationOrbitFly" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all text-sm shadow-md">
+          <i class="fa-brands fa-youtube text-lg"></i> Subscribe on YouTube &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-br from-[#0a1628] via-[#1e3a8a] to-[#0a1628] text-center">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">Join 1000+ Students Who Made It</h2>
+      <p class="text-blue-200 mb-8 leading-relaxed">Your story could be the next one on this page. Start your MBBS journey with the consultancy that thousands have trusted.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <button onclick="openModal()" class="px-8 py-3.5 bg-yellow-400 text-[#0a1628] font-bold rounded-xl hover:bg-yellow-300 transition-all shadow-lg text-sm">Start My Journey &rarr;</button>
+        <a href="contact.html" class="px-8 py-3.5 bg-white/10 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all text-sm backdrop-blur-sm">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-400 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <img src="assets/logo.png" alt="MBBS Education Orbit Fly" class="h-14 w-auto object-contain mb-5 brightness-0 invert" />
+          <p class="text-sm leading-relaxed mb-5">India's trusted MBBS abroad consultancy — 1000+ students placed in top Russian medical universities since 2010.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+            <a href="https://www.instagram.com/mbbs_education_orbit_fly" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-pink-600 rounded-lg flex items-center justify-center transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram text-sm"></i></a>
+            <a href="https://wa.me/919410494695" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp text-sm"></i></a>
+            <a href="https://www.youtube.com/@MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors" aria-label="YouTube"><i class="fa-brands fa-youtube text-sm"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>About Us</a></li>
+            <li><a href="universities.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Universities</a></li>
+            <li><a href="process.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Admission Process</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Services</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Our Services</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Admission Assistance</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Visa Services</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Travel Booking</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Airport Pickup</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>FMGE Coaching</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Contact Us</h4>
+          <ul class="space-y-3 text-sm mb-5">
+            <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-blue-400 mt-0.5 flex-shrink-0"></i><span>West Guru Angad Nagar, Laxmi Nagar, Delhi - 110092</span></li>
+            <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-blue-400 flex-shrink-0"></i><a href="tel:+919410494695" class="hover:text-white transition-colors">+91 9410494695</a></li>
+            <li class="flex items-start gap-3"><i class="fa-solid fa-envelope text-blue-400 flex-shrink-0 mt-0.5"></i><a href="mailto:mbbseducationorbitfly@gmail.com" class="hover:text-white transition-colors break-all">mbbseducationorbitfly@gmail.com</a></li>
+          </ul>
+          <h5 class="text-white text-xs font-semibold uppercase tracking-widest mb-2">Branch Offices</h5>
+          <p class="text-gray-500 text-xs leading-relaxed">Meerut &bull; Saharanpur &bull; Deoband &bull; Muzaffarnagar &bull; Noida &bull; Gwalior &bull; Agra &bull; Faridabad &bull; Indore</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-600">
+        <span>&copy; 2025 MBBS Education Orbit Fly. All Rights Reserved.</span>
+        <span>Director: Nek Mohammad &mdash; Delhi, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919410494695" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 flex items-center justify-center" aria-label="WhatsApp">
+    <span class="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-60"></span>
+    <span class="relative w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-xl transition-colors"><i class="fa-brands fa-whatsapp text-white text-2xl"></i></span>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="fixed bottom-24 right-6 z-50 w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-blue-800" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- APPLY NOW MODAL -->
+  <div id="apply-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4" style="opacity:0;pointer-events:none;transition:opacity .25s ease">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeModal()"></div>
+    <div id="modal-box" class="relative bg-white rounded-3xl shadow-2xl w-full max-w-lg p-8" style="transform:scale(0.95);transition:transform .25s ease">
+      <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors"><i class="fa-solid fa-xmark"></i></button>
+      <div class="mb-6">
+        <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-4"><i class="fa-solid fa-graduation-cap text-blue-700 text-xl"></i></div>
+        <h3 class="font-serif text-2xl font-bold text-[#0a1628] mb-1">Apply Now</h3>
+        <p class="text-gray-500 text-sm">Get free consultation from our expert counsellors</p>
+      </div>
+      <form data-wa-form="Apply Now Modal" class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div><label class="text-xs font-medium text-gray-700 mb-1 block">Full Name *</label><input type="text" name="Name" placeholder="Your name" required class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+          <div><label class="text-xs font-medium text-gray-700 mb-1 block">Phone *</label><input type="tel" name="Phone" placeholder="+91 XXXXXXXXXX" required class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+        </div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Email</label><input type="email" name="Email" placeholder="your@email.com" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Preferred University</label>
+          <select name="University" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-gray-600">
+            <option value="">-- Select University --</option>
+            <option>Kabardino-Balkarian State University</option><option>Tver State Medical University</option><option>Yaroslavl State Medical University</option><option>Ivanovo State Medical University</option><option>North-Western State Medical University</option><option>Kazan State Medical University</option><option>Not Sure (Need Guidance)</option>
+          </select></div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Message</label><textarea rows="3" name="Message" placeholder="Any questions..." class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"></textarea></div>
+        <button type="submit" class="w-full py-3.5 bg-blue-900 text-white font-bold rounded-xl hover:bg-blue-800 transition-all shadow-lg text-sm">Submit Application &rarr;</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

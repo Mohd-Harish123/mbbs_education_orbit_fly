@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="End-to-end MBBS Russia admission services by MBBS Education Orbit Fly — counselling, documentation, visa, travel, airport pickup, FMGE coaching and more." />
+  <meta property="og:title" content="Our Services | MBBS Education Orbit Fly" />
+  <meta property="og:description" content="13 comprehensive services to support your MBBS journey in Russia — from free counselling to post-arrival support and FMGE preparation." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:type" content="website" />
+  <title>Our Services | MBBS Education Orbit Fly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Poppins','sans-serif'],serif:['"Playfair Display"','Georgia','serif']}}}}</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-gray-300 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
+      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+        <a href="tel:+919410494695" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-solid fa-phone text-blue-400"></i> +91 9410494695</a>
+        <span class="text-gray-600 hidden sm:inline">|</span>
+        <a href="mailto:mbbseducationorbitfly@gmail.com" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-solid fa-envelope text-blue-400"></i> mbbseducationorbitfly@gmail.com</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="https://www.facebook.com/MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-6 h-6 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-600 transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="font-size:10px"></i></a>
+        <a href="https://www.instagram.com/mbbs_education_orbit_fly" target="_blank" rel="noopener" class="w-6 h-6 flex items-center justify-center rounded-full bg-white/10 hover:bg-pink-600 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram" style="font-size:10px"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex-shrink-0"><img src="assets/logo.png" alt="MBBS Education Orbit Fly" class="h-11 lg:h-14 w-auto object-contain" id="nav-logo" /></a>
+        <div class="hidden lg:flex items-center gap-0.5">
+          <a href="index.html"        class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Home</a>
+          <a href="about.html"        class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">About</a>
+          <a href="why-russia.html"   class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Why Russia</a>
+          <a href="universities.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Universities</a>
+          <a href="process.html"      class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Process</a>
+          <a href="services.html"     class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Services</a>
+          <a href="testimonials.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Testimonials</a>
+          <a href="contact.html"      class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Contact</a>
+        </div>
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="assets/brochure.pdf" target="_blank" rel="noopener" class="px-4 py-2 text-sm font-medium text-blue-900 border border-blue-200 rounded-lg hover:bg-blue-50 transition-colors"><i class="fa-solid fa-download mr-1 text-xs"></i>Brochure</a>
+          <button onclick="openModal()" class="px-5 py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-lg hover:bg-blue-800 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">Apply Now &rarr;</button>
+        </div>
+        <button id="menu-btn" class="lg:hidden p-2 rounded-md text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition-colors" aria-label="Toggle menu">
+          <i id="icon-open" class="fa-solid fa-bars text-xl"></i>
+          <i id="icon-close" class="fa-solid fa-xmark text-xl hidden"></i>
+        </button>
+      </div>
+      <div id="mobile-menu" class="lg:hidden overflow-hidden border-t border-gray-100 bg-white" style="max-height:0;transition:max-height .35s ease">
+        <div class="py-3 space-y-0.5">
+          <a href="index.html"        class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Home</a>
+          <a href="about.html"        class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">About</a>
+          <a href="why-russia.html"   class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Why Russia</a>
+          <a href="universities.html" class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Universities</a>
+          <a href="process.html"      class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Process</a>
+          <a href="services.html"     class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Services</a>
+          <a href="testimonials.html" class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Testimonials</a>
+          <a href="contact.html"      class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Contact</a>
+          <div class="px-4 pt-3 pb-4 flex flex-col gap-2">
+            <a href="assets/brochure.pdf" target="_blank" rel="noopener" class="block text-center py-2.5 border border-blue-200 text-blue-900 text-sm font-medium rounded-xl hover:bg-blue-50 transition-colors">Download Brochure</a>
+            <button onclick="openModal();closeMobileMenu()" class="w-full text-center py-3 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-colors shadow-sm">Apply Now &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero text-center">
+    <div class="page-hero-blob" style="width:420px;height:420px;top:-120px;left:-80px;background:rgba(37,99,235,.16)"></div>
+    <div class="page-hero-blob" style="width:300px;height:300px;bottom:-70px;right:-50px;background:rgba(245,158,11,.1)"></div>
+    <div class="relative z-10 max-w-3xl mx-auto" data-aos="fade-up">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep"><i class="fa-solid fa-chevron-right text-[9px]"></i></span>
+        <span class="current">Services</span>
+      </nav>
+      <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+        Our <span class="text-yellow-400">Services</span>
+      </h1>
+      <p class="text-blue-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
+        13 end-to-end services that take you from your first enquiry all the way through to a flourishing medical career — we handle everything.
+      </p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <button onclick="openModal()" class="px-7 py-3.5 bg-yellow-400 text-[#0a1628] font-bold rounded-xl hover:bg-yellow-300 transition-all shadow-lg text-sm">Get Started &rarr;</button>
+        <a href="#services-grid" class="px-7 py-3.5 bg-white/10 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all text-sm backdrop-blur-sm">Explore All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <section class="py-12 bg-blue-50 border-y border-blue-100">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-4 gap-6 text-center" data-aos="fade-up">
+        <div>
+          <div class="text-3xl font-bold text-[#1e3a8a] mb-1">13</div>
+          <div class="text-sm text-gray-600 font-medium">Dedicated Services</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-[#1e3a8a] mb-1">1000+</div>
+          <div class="text-sm text-gray-600 font-medium">Students Served</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-[#1e3a8a] mb-1">100%</div>
+          <div class="text-sm text-gray-600 font-medium">Visa Success Rate</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-[#1e3a8a] mb-1">0</div>
+          <div class="text-sm text-gray-600 font-medium">Hidden Charges</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 SERVICES GRID -->
+  <section id="services-grid" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <span class="section-label">What We Do</span>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#0a1628] leading-tight">Everything You Need, Under One Roof</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-comments text-blue-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">Free Counselling</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">One-on-one career counselling session to assess your eligibility, discuss NEET score, budget, preferred climate, and shortlist the best 2–3 universities for your profile. Available via call, WhatsApp, or in-office visit at any of our 9 branches.</p>
+          <span class="inline-block bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">Completely Free</span>
+        </div>
+
+        <!-- 2 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="60">
+          <div class="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-file-pen text-green-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">Admission Assistance</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Complete university application support — we fill and submit forms, liaise with the university's admission office, track application status, and secure your Offer Letter. We have direct contacts at our 9 partner universities to fast-track your application.</p>
+          <span class="inline-block bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">End-to-End</span>
+        </div>
+
+        <!-- 3 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="120">
+          <div class="w-14 h-14 rounded-2xl bg-amber-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-stamp text-amber-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">Document Attestation</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">We handle HRD Apostille attestation of all your academic documents (Class 10, 12, birth certificate), translation into Russian by certified translators, and notarisation. All documents are returned to you well before your visa appointment.</p>
+          <span class="inline-block bg-amber-50 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full">Govt. Certified</span>
+        </div>
+
+        <!-- 4 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 rounded-2xl bg-purple-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-envelope-open-text text-purple-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">Invitation Letter Processing</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">We apply for the official Invitation Letter (Form 1B) from the Russian Ministry of Internal Affairs on your behalf — a critical document without which the student visa cannot be applied. We track the application and ensure timely delivery.</p>
+          <span class="inline-block bg-purple-50 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">Ministry of Internal Affairs</span>
+        </div>
+
+        <!-- 5 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="60">
+          <div class="w-14 h-14 rounded-2xl bg-rose-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-passport text-rose-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">Visa Application Support</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">We prepare your complete student visa dossier (D-type visa), guide you through the Russian Embassy appointment booking process, brief you on what to expect at the visa interview, and ensure 100% document completeness to avoid rejection. Our visa success rate is 100%.</p>
+          <span class="inline-block bg-rose-50 text-rose-700 text-xs font-semibold px-3 py-1 rounded-full">100% Success Rate</span>
+        </div>
+
+        <!-- 6 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="120">
+          <div class="w-14 h-14 rounded-2xl bg-teal-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-plane-departure text-teal-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">Flight Booking</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">We research and book the most affordable direct or connecting flight to your university city at the best available fare. Group bookings with other students heading to the same city are arranged whenever possible to reduce costs and build a companion network before arrival.</p>
+          <span class="inline-block bg-teal-50 text-teal-700 text-xs font-semibold px-3 py-1 rounded-full">Best Fare Guarantee</span>
+        </div>
+
+        <!-- 7 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 rounded-2xl bg-indigo-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-car-side text-indigo-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">Airport Pickup</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Our representative (often a senior Indian student or local coordinator) meets you at the arrival terminal with a name board and takes you directly to the university hostel. No taxi confusion, no language barrier — a familiar face on your first day in a new country.</p>
+          <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full">Included</span>
+        </div>
+
+        <!-- 8 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="60">
+          <div class="w-14 h-14 rounded-2xl bg-orange-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-building-columns text-orange-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">University Enrolment Support</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Within the first 3 days of arrival, we help complete all university registration formalities, hostel check-in, student ID card, timetable collection, and introduction to the faculty and student body. We ensure you start classes confidently on Day 1.</p>
+          <span class="inline-block bg-orange-50 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full">On-Ground Support</span>
+        </div>
+
+        <!-- 9 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="120">
+          <div class="w-14 h-14 rounded-2xl bg-cyan-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-sim-card text-cyan-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">SIM Card &amp; Banking</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">We assist you in getting a local Russian SIM card (for internet and local calls) and help you open a student bank account to receive money from India through official banking channels. We also guide you on the best money transfer methods (low-fee options).</p>
+          <span class="inline-block bg-cyan-50 text-cyan-700 text-xs font-semibold px-3 py-1 rounded-full">Post-Arrival</span>
+        </div>
+
+        <!-- 10 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-book-medical text-emerald-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">FMGE / NExT Coaching</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Starting from Year 4, we provide structured FMGE (and upcoming NExT) preparation — a comprehensive question bank, subject-wise video lectures, weekly mock tests, and doubt sessions with doctors who cleared FMGE themselves after studying in Russia. Our students consistently outperform the national average pass rate.</p>
+          <span class="inline-block bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full">Above-Avg. Pass Rate</span>
+        </div>
+
+        <!-- 11 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="60">
+          <div class="w-14 h-14 rounded-2xl bg-fuchsia-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-house-medical text-fuchsia-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">Accommodation Guidance</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">We provide detailed guidance on university hostel facilities, room options, and costs before you travel. For students who prefer private accommodation in later years, we connect them with trusted Indian seniors who help find safe, affordable flats near the university.</p>
+          <span class="inline-block bg-fuchsia-50 text-fuchsia-700 text-xs font-semibold px-3 py-1 rounded-full">Safe &amp; Verified</span>
+        </div>
+
+        <!-- 12 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="120">
+          <div class="w-14 h-14 rounded-2xl bg-yellow-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-shield-heart text-yellow-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">Medical Insurance</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">We arrange comprehensive student medical insurance valid in Russia as required by the university and visa regulations. The policy covers hospitalisation, emergency treatment, and outpatient care for the academic year at very affordable premium rates.</p>
+          <span class="inline-block bg-yellow-50 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">Mandatory Cover</span>
+        </div>
+
+        <!-- 13 -->
+        <div class="service-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm sm:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 rounded-2xl bg-sky-100 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-headset text-sky-700 text-2xl"></i>
+          </div>
+          <h3 class="font-semibold text-[#0a1628] text-xl mb-2">24/7 Student Helpline</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Our dedicated student support team is available round-the-clock via WhatsApp, phone, and email. Whether it's an academic query, a hostel issue, a medical emergency, or homesickness — our counsellors and ground staff in Russia are always just one call away. We never leave a student alone.</p>
+          <span class="inline-block bg-sky-50 text-sky-700 text-xs font-semibold px-3 py-1 rounded-full">Always Available</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY DIFFERENT -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <span class="section-label">Why Different</span>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#0a1628] leading-tight">What Makes Us Stand Out</h2>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-5" data-aos="fade-right">
+          <div class="flex gap-4 bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-handshake text-blue-700"></i></div>
+            <div>
+              <h4 class="font-semibold text-[#0a1628] mb-1">No Middle-Man Commission Model</h4>
+              <p class="text-sm text-gray-600">We work directly with partner universities — no commission charged to the university passes onto you. Our fees are transparent and fixed upfront.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-location-dot text-green-700"></i></div>
+            <div>
+              <h4 class="font-semibold text-[#0a1628] mb-1">9 Branch Offices Across India</h4>
+              <p class="text-sm text-gray-600">We're not just a website. With offices in Delhi, Meerut, Saharanpur, Deoband, Muzaffarnagar, Noida, Gwalior, Agra, Faridabad, and Indore — you can meet us in person before committing.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-users text-amber-700"></i></div>
+            <div>
+              <h4 class="font-semibold text-[#0a1628] mb-1">Alumni Network in Russia</h4>
+              <p class="text-sm text-gray-600">We have a network of senior students and alumni at each of our partner universities. New students are paired with a senior Indian student as a buddy for the first 30 days.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-file-shield text-purple-700"></i></div>
+            <div>
+              <h4 class="font-semibold text-[#0a1628] mb-1">Only NMC-Approved Universities</h4>
+              <p class="text-sm text-gray-600">We never recommend unrecognised universities to save on commission. Every university we work with is verified in the NMC and WHO global directory — protecting your career.</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <div class="relative">
+            <img src="https://picsum.photos/seed/teamwork/720/540" alt="Our team" class="w-full rounded-3xl shadow-2xl object-cover h-96 lg:h-[450px]" loading="lazy" />
+            <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-5 max-w-xs">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="flex -space-x-2">
+                  <img src="https://picsum.photos/seed/p1/32/32" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover" />
+                  <img src="https://picsum.photos/seed/p2/32/32" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover" />
+                  <img src="https://picsum.photos/seed/p3/32/32" alt="" class="w-8 h-8 rounded-full border-2 border-white object-cover" />
+                </div>
+                <div class="text-xs font-semibold text-[#0a1628]">1000+ Happy Students</div>
+              </div>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                <span class="text-xs text-gray-600 ml-1">5.0 Google Rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS FLOW VISUAL -->
+  <section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-label">How It Works</span>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#0a1628] leading-tight">Service Journey at a Glance</h2>
+      </div>
+      <div class="relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="hidden sm:block absolute top-8 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-blue-500 to-blue-200 z-0"></div>
+        <div class="grid sm:grid-cols-5 gap-6 relative z-10">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg"><i class="fa-solid fa-phone text-white text-xl"></i></div>
+            <div class="text-xs font-semibold text-[#0a1628]">Enquiry</div>
+            <div class="text-[10px] text-gray-500 mt-1">Day 1</div>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg"><i class="fa-solid fa-file-pen text-white text-xl"></i></div>
+            <div class="text-xs font-semibold text-[#0a1628]">Application</div>
+            <div class="text-[10px] text-gray-500 mt-1">Day 4–7</div>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg"><i class="fa-solid fa-passport text-white text-xl"></i></div>
+            <div class="text-xs font-semibold text-[#0a1628]">Visa</div>
+            <div class="text-[10px] text-gray-500 mt-1">Day 15–25</div>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg"><i class="fa-solid fa-plane text-white text-xl"></i></div>
+            <div class="text-xs font-semibold text-[#0a1628]">Travel</div>
+            <div class="text-[10px] text-gray-500 mt-1">Day 26–35</div>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg"><i class="fa-solid fa-graduation-cap text-white text-xl"></i></div>
+            <div class="text-xs font-semibold text-[#0a1628]">Classes Begin</div>
+            <div class="text-[10px] text-gray-500 mt-1">Day 36–45</div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-xs text-gray-500 mt-10">Want the full detailed process? <a href="process.html" class="text-blue-700 font-medium hover:underline">View our Step-by-Step Process page &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-br from-[#0a1628] via-[#1e3a8a] to-[#0a1628] text-center">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">Let Us Handle Everything</h2>
+      <p class="text-blue-200 mb-8 leading-relaxed">You focus on preparing for your medical career. We'll take care of every document, every deadline, every formality — from Day 1 to your first day at university.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <button onclick="openModal()" class="px-8 py-3.5 bg-yellow-400 text-[#0a1628] font-bold rounded-xl hover:bg-yellow-300 transition-all shadow-lg text-sm">Get Free Counselling &rarr;</button>
+        <a href="tel:+919410494695" class="px-8 py-3.5 bg-white/10 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all text-sm backdrop-blur-sm"><i class="fa-solid fa-phone mr-2"></i>+91 9410494695</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-400 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <img src="assets/logo.png" alt="MBBS Education Orbit Fly" class="h-14 w-auto object-contain mb-5 brightness-0 invert" />
+          <p class="text-sm leading-relaxed mb-5">India's trusted MBBS abroad consultancy — 1000+ students placed in top Russian medical universities since 2010.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+            <a href="https://www.instagram.com/mbbs_education_orbit_fly" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-pink-600 rounded-lg flex items-center justify-center transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram text-sm"></i></a>
+            <a href="https://wa.me/919410494695" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp text-sm"></i></a>
+            <a href="https://www.youtube.com/@MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors" aria-label="YouTube"><i class="fa-brands fa-youtube text-sm"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>About Us</a></li>
+            <li><a href="universities.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Universities</a></li>
+            <li><a href="process.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Admission Process</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Services</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Our Services</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Admission Assistance</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Visa Services</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Travel Booking</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Airport Pickup</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>FMGE Coaching</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Contact Us</h4>
+          <ul class="space-y-3 text-sm mb-5">
+            <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-blue-400 mt-0.5 flex-shrink-0"></i><span>West Guru Angad Nagar, Laxmi Nagar, Delhi - 110092</span></li>
+            <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-blue-400 flex-shrink-0"></i><a href="tel:+919410494695" class="hover:text-white transition-colors">+91 9410494695</a></li>
+            <li class="flex items-start gap-3"><i class="fa-solid fa-envelope text-blue-400 flex-shrink-0 mt-0.5"></i><a href="mailto:mbbseducationorbitfly@gmail.com" class="hover:text-white transition-colors break-all">mbbseducationorbitfly@gmail.com</a></li>
+          </ul>
+          <h5 class="text-white text-xs font-semibold uppercase tracking-widest mb-2">Branch Offices</h5>
+          <p class="text-gray-500 text-xs leading-relaxed">Meerut &bull; Saharanpur &bull; Deoband &bull; Muzaffarnagar &bull; Noida &bull; Gwalior &bull; Agra &bull; Faridabad &bull; Indore</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-600">
+        <span>&copy; 2025 MBBS Education Orbit Fly. All Rights Reserved.</span>
+        <span>Director: Nek Mohammad &mdash; Delhi, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919410494695" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 flex items-center justify-center" aria-label="WhatsApp">
+    <span class="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-60"></span>
+    <span class="relative w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-xl transition-colors"><i class="fa-brands fa-whatsapp text-white text-2xl"></i></span>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="fixed bottom-24 right-6 z-50 w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-blue-800" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- APPLY NOW MODAL -->
+  <div id="apply-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4" style="opacity:0;pointer-events:none;transition:opacity .25s ease">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeModal()"></div>
+    <div id="modal-box" class="relative bg-white rounded-3xl shadow-2xl w-full max-w-lg p-8" style="transform:scale(0.95);transition:transform .25s ease">
+      <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors"><i class="fa-solid fa-xmark"></i></button>
+      <div class="mb-6">
+        <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-4"><i class="fa-solid fa-graduation-cap text-blue-700 text-xl"></i></div>
+        <h3 class="font-serif text-2xl font-bold text-[#0a1628] mb-1">Apply Now</h3>
+        <p class="text-gray-500 text-sm">Get free consultation from our expert counsellors</p>
+      </div>
+      <form data-wa-form="Apply Now Modal" class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div><label class="text-xs font-medium text-gray-700 mb-1 block">Full Name *</label><input type="text" name="Name" placeholder="Your name" required class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+          <div><label class="text-xs font-medium text-gray-700 mb-1 block">Phone *</label><input type="tel" name="Phone" placeholder="+91 XXXXXXXXXX" required class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+        </div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Email</label><input type="email" name="Email" placeholder="your@email.com" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Service Interested In</label>
+          <select name="Service" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-gray-600">
+            <option value="">-- Select Service --</option>
+            <option>Free Counselling</option><option>Admission Assistance</option><option>Document Attestation</option><option>Visa Support</option><option>FMGE Coaching</option><option>All Services (Full Package)</option>
+          </select></div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Message</label><textarea rows="3" name="Message" placeholder="Any questions..." class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"></textarea></div>
+        <button type="submit" class="w-full py-3.5 bg-blue-900 text-white font-bold rounded-xl hover:bg-blue-800 transition-all shadow-lg text-sm">Submit &rarr;</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

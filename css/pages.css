@@ -1,0 +1,299 @@
+/* =============================================
+   MBBS Education Orbit Fly — pages.css
+   Page-specific styles shared across inner pages
+   ============================================= */
+
+/* =============================================
+   PAGE HERO
+   ============================================= */
+.page-hero {
+  position: relative;
+  padding: 5rem 1rem 4rem;
+  background: linear-gradient(135deg, #0a1628 0%, #1a3a8a 55%, #0a1628 100%);
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0);
+  background-size: 36px 36px;
+  pointer-events: none;
+}
+.page-hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+/* =============================================
+   BREADCRUMB
+   ============================================= */
+.breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba(191, 219, 254, 0.75);
+  font-size: 0.8125rem;
+  margin-bottom: 0.875rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.breadcrumb a { color: rgba(191, 219, 254, 0.75); transition: color .2s; }
+.breadcrumb a:hover { color: #fff; }
+.breadcrumb .sep { color: rgba(191, 219, 254, 0.4); }
+.breadcrumb .current { color: #fff; font-weight: 500; }
+
+/* =============================================
+   SECTION LABEL / EYEBROW
+   ============================================= */
+.section-label {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 0.75rem;
+}
+
+/* =============================================
+   ALTERNATING TIMELINE (process page)
+   ============================================= */
+.alt-timeline {
+  position: relative;
+  padding: 1rem 0 2rem;
+}
+.alt-timeline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, #1e3a8a 0%, #16a34a 60%, #f59e0b 100%);
+  border-radius: 3px;
+}
+@media (max-width: 767px) {
+  .alt-timeline::after { left: 1.75rem; }
+}
+
+.alt-tl-item {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: calc(50% + 3rem);
+  margin-bottom: 3rem;
+}
+.alt-tl-item:nth-child(even) {
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: calc(50% + 3rem);
+}
+@media (max-width: 767px) {
+  .alt-tl-item,
+  .alt-tl-item:nth-child(even) {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: 4.5rem;
+  }
+}
+
+.alt-tl-node {
+  position: absolute;
+  left: 50%;
+  top: 1.25rem;
+  transform: translateX(-50%);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 16px rgba(10,22,40,.2);
+  z-index: 2;
+  font-size: 1.125rem;
+}
+@media (max-width: 767px) {
+  .alt-tl-node { left: 1.75rem; }
+}
+
+.alt-tl-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(10,22,40,.06);
+  width: 100%;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.alt-tl-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(10,22,40,.1);
+}
+
+/* =============================================
+   ACCORDION (FAQ)
+   ============================================= */
+.accordion-item {
+  border: 1px solid #e2e8f0;
+  border-radius: .875rem;
+  overflow: hidden;
+  margin-bottom: .75rem;
+  background: #fff;
+  transition: box-shadow .2s;
+}
+.accordion-item:hover { box-shadow: 0 4px 16px rgba(10,22,40,.07); }
+.accordion-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.125rem 1.5rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: .9375rem;
+  color: #0a1628;
+  gap: 1rem;
+}
+.accordion-btn:hover { background: #f8fafc; }
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .38s ease;
+  padding: 0 1.5rem;
+  color: #64748b;
+  font-size: .875rem;
+  line-height: 1.75;
+}
+.accordion-body-inner { padding-bottom: 1.25rem; }
+.acc-icon { transition: transform .3s ease; flex-shrink: 0; color: #1e3a8a; }
+.acc-icon.rotate-180 { transform: rotate(180deg); }
+
+/* =============================================
+   FILTER BUTTONS
+   ============================================= */
+.uni-filter-btn,
+.test-filter-btn {
+  padding: .5rem 1.25rem;
+  border-radius: 9999px;
+  font-size: .8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .2s;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  background: #fff;
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+}
+.uni-filter-btn:hover, .test-filter-btn:hover { border-color: #1e3a8a; color: #1e3a8a; }
+.uni-filter-btn.active, .test-filter-btn.active { background: #1e3a8a; color: #fff; border-color: #1e3a8a; }
+
+/* =============================================
+   MASONRY GRID (testimonials)
+   ============================================= */
+.masonry-grid {
+  columns: 1;
+  column-gap: 1.5rem;
+}
+@media (min-width: 640px)  { .masonry-grid { columns: 2; } }
+@media (min-width: 1024px) { .masonry-grid { columns: 3; } }
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+/* =============================================
+   FEATURED STUDENTS GRID
+   ============================================= */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+@media (min-width: 640px)  { .students-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); } }
+
+.student-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: .875rem;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: transform .3s, box-shadow .3s;
+}
+.student-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(10,22,40,.1); }
+.student-card img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto .75rem;
+  border: 2px solid #eff6ff;
+}
+
+/* =============================================
+   COMPARISON TABLE
+   ============================================= */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .875rem;
+}
+.compare-table th, .compare-table td {
+  padding: .875rem 1rem;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+.compare-table th { background: #0a1628; color: #fff; font-weight: 600; }
+.compare-table th:first-child { background: #1e3a8a; }
+.compare-table td:first-child { font-weight: 500; color: #0a1628; background: #f8fafc; text-align: left; }
+.compare-table tr:nth-child(even) td { background: #f8fafc; }
+.compare-table tr:nth-child(even) td:first-child { background: #f1f5f9; }
+.compare-table .good { color: #16a34a; font-weight: 600; }
+.compare-table .bad  { color: #dc2626; }
+
+/* =============================================
+   VALUE CARDS (about page)
+   ============================================= */
+.value-card {
+  border-radius: 1.25rem;
+  padding: 2rem;
+  transition: transform .3s, box-shadow .3s;
+  position: relative;
+  overflow: hidden;
+}
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: rgba(255,255,255,.08);
+}
+.value-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(10,22,40,.18); }
+
+/* =============================================
+   MOBILE NAV ACTIVE STATE
+   ============================================= */
+a.nav-link.active {
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+/* =============================================
+   PAGE HERO RESPONSIVE
+   ============================================= */
+@media (min-width: 1024px) {
+  .page-hero { padding: 6rem 1rem 5rem; }
+}

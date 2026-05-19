@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About MBBS Education Orbit Fly — Learn about our story, our director Nek Mohammad, our mission to make MBBS in Russia accessible for every Indian student." />
+  <meta property="og:title" content="About Us | MBBS Education Orbit Fly" />
+  <meta property="og:description" content="Learn about MBBS Education Orbit Fly — 1000+ students placed, 9 branches, 5-star rated consultancy led by Director Nek Mohammad." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:type" content="website" />
+  <title>About Us | MBBS Education Orbit Fly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Poppins','sans-serif'],serif:['"Playfair Display"','Georgia','serif']}}}}</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-gray-300 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
+      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+        <a href="tel:+919410494695" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-solid fa-phone text-blue-400"></i> +91 9410494695</a>
+        <span class="text-gray-600 hidden sm:inline">|</span>
+        <a href="mailto:mbbseducationorbitfly@gmail.com" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-solid fa-envelope text-blue-400"></i> mbbseducationorbitfly@gmail.com</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="https://www.facebook.com/MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-6 h-6 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-600 transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="font-size:10px"></i></a>
+        <a href="https://www.instagram.com/mbbs_education_orbit_fly" target="_blank" rel="noopener" class="w-6 h-6 flex items-center justify-center rounded-full bg-white/10 hover:bg-pink-600 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram" style="font-size:10px"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex-shrink-0"><img src="assets/logo.png" alt="MBBS Education Orbit Fly" class="h-11 lg:h-14 w-auto object-contain" id="nav-logo" /></a>
+        <div class="hidden lg:flex items-center gap-0.5">
+          <a href="index.html"        class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Home</a>
+          <a href="about.html"        class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">About</a>
+          <a href="why-russia.html"   class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Why Russia</a>
+          <a href="universities.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Universities</a>
+          <a href="process.html"      class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Process</a>
+          <a href="services.html"     class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Services</a>
+          <a href="testimonials.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Testimonials</a>
+          <a href="contact.html"      class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Contact</a>
+        </div>
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="assets/brochure.pdf" target="_blank" rel="noopener" class="px-4 py-2 text-sm font-medium text-blue-900 border border-blue-200 rounded-lg hover:bg-blue-50 transition-colors"><i class="fa-solid fa-download mr-1 text-xs"></i>Brochure</a>
+          <button onclick="openModal()" class="px-5 py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-lg hover:bg-blue-800 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">Apply Now &rarr;</button>
+        </div>
+        <button id="menu-btn" class="lg:hidden p-2 rounded-md text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition-colors" aria-label="Toggle menu">
+          <i id="icon-open" class="fa-solid fa-bars text-xl"></i>
+          <i id="icon-close" class="fa-solid fa-xmark text-xl hidden"></i>
+        </button>
+      </div>
+      <div id="mobile-menu" class="lg:hidden overflow-hidden border-t border-gray-100 bg-white" style="max-height:0;transition:max-height .35s ease">
+        <div class="py-3 space-y-0.5">
+          <a href="index.html"        class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Home</a>
+          <a href="about.html"        class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">About</a>
+          <a href="why-russia.html"   class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Why Russia</a>
+          <a href="universities.html" class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Universities</a>
+          <a href="process.html"      class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Process</a>
+          <a href="services.html"     class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Services</a>
+          <a href="testimonials.html" class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Testimonials</a>
+          <a href="contact.html"      class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Contact</a>
+          <div class="px-4 pt-3 pb-4 flex flex-col gap-2">
+            <a href="assets/brochure.pdf" target="_blank" rel="noopener" class="block text-center py-2.5 border border-blue-200 text-blue-900 text-sm font-medium rounded-xl hover:bg-blue-50 transition-colors">Download Brochure</a>
+            <button onclick="openModal();closeMobileMenu()" class="w-full text-center py-3 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-colors shadow-sm">Apply Now &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-blob" style="width:400px;height:400px;background:rgba(96,165,250,.1);top:-100px;right:-100px;"></div>
+    <div class="page-hero-blob" style="width:280px;height:280px;background:rgba(245,158,11,.07);bottom:-60px;left:-60px;"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep"><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+        <span class="current">About Us</span>
+      </nav>
+      <h1 class="font-serif text-4xl lg:text-5xl font-bold text-white mb-3" data-aos="fade-up">About Us</h1>
+      <p class="text-blue-200 text-lg" data-aos="fade-up" data-aos-delay="100">Know the people, the purpose, and the passion behind MBBS Education Orbit Fly</p>
+    </div>
+  </section>
+
+
+  <!-- OUR STORY -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <div class="relative">
+            <img src="https://picsum.photos/seed/officeteam/700/500" alt="MBBS Education Orbit Fly Office" class="rounded-2xl w-full object-cover shadow-xl" />
+            <div class="absolute -bottom-5 -right-5 bg-blue-900 text-white rounded-2xl p-5 shadow-xl hidden sm:block">
+              <div class="text-3xl font-bold">1000+</div>
+              <div class="text-blue-200 text-sm">Students Placed</div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <span class="section-label">Who We Are</span>
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-[#0a1628] mb-5">A Consultancy Built on Trust &amp; Transparency</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">MBBS Education Orbit Fly is one of India's most trusted consultancies for MBBS admission in top Russian medical universities. Founded with a single purpose — to make quality medical education abroad accessible and affordable for every deserving Indian student — we have since grown into a nationwide network with 9 branch offices and over 1000 successfully placed students.</p>
+          <p class="text-gray-600 leading-relaxed mb-4">We are registered, recognized, and recommended by students and parents alike. Our Google rating of 5.0 ★ speaks not just to our admission success rate, but to the level of care, honesty, and personalized support we bring to every student's journey.</p>
+          <p class="text-gray-600 leading-relaxed mb-6">Unlike many consultancies that focus solely on paperwork, we stay with our students for all 6 years of their MBBS program — from the first inquiry call to the day they graduate and return to India as qualified doctors.</p>
+          <div class="flex flex-wrap gap-3">
+            <span class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-800 rounded-full text-sm font-medium"><i class="fa-solid fa-check-circle text-blue-600"></i>NMC Approved Universities</span>
+            <span class="inline-flex items-center gap-2 px-4 py-2 bg-green-50 text-green-800 rounded-full text-sm font-medium"><i class="fa-solid fa-check-circle text-green-600"></i>9 Branch Offices</span>
+            <span class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-50 text-yellow-800 rounded-full text-sm font-medium"><i class="fa-solid fa-star text-yellow-500"></i>5.0 Google Rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MISSION & VISION -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-label">Our Purpose</span>
+        <h2 class="font-serif text-3xl lg:text-4xl font-bold text-[#0a1628]">Mission &amp; Vision</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-7">
+        <div class="bg-gradient-to-br from-blue-900 to-[#0a1628] rounded-2xl p-8 text-white" data-aos="fade-right">
+          <div class="w-14 h-14 bg-white/15 rounded-2xl flex items-center justify-center mb-5">
+            <i class="fa-solid fa-bullseye text-yellow-400 text-2xl"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold mb-4">Our Mission</h3>
+          <p class="text-blue-100 leading-relaxed text-base">"To make quality medical education abroad accessible and affordable for every deserving Indian student — regardless of financial background — by providing transparent, honest, and fully supported MBBS admissions in Russia."</p>
+        </div>
+        <div class="bg-gradient-to-br from-[#0a1628] to-blue-900 rounded-2xl p-8 text-white" data-aos="fade-left">
+          <div class="w-14 h-14 bg-white/15 rounded-2xl flex items-center justify-center mb-5">
+            <i class="fa-solid fa-eye text-yellow-400 text-2xl"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold mb-4">Our Vision</h3>
+          <p class="text-blue-100 leading-relaxed text-base">"To be India's most trusted MBBS abroad consultancy — known for unwavering transparency, a perfect success rate, and a commitment to student care that goes far beyond admission day."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DIRECTOR'S FULL MESSAGE -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-label">From The Director's Desk</span>
+        <h2 class="font-serif text-3xl lg:text-4xl font-bold text-[#0a1628]">A Message From Nek Mohammad</h2>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-14 items-start">
+
+        <!-- Photo -->
+        <div class="flex flex-col items-center" data-aos="fade-right">
+          <div class="relative mb-8">
+            <div class="absolute -inset-5 rounded-full border-4 border-dashed border-blue-200 spin-slow"></div>
+            <div class="absolute -inset-2 rounded-full bg-gradient-to-br from-blue-100 to-blue-50"></div>
+            <img src="https://picsum.photos/seed/director99/400/400" alt="Nek Mohammad — Director"
+                 class="relative w-56 h-56 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-white shadow-2xl" />
+            <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-blue-900 text-white px-5 py-2 rounded-full text-sm font-semibold whitespace-nowrap shadow-lg">Nek Mohammad</div>
+          </div>
+          <div class="text-center mt-4">
+            <div class="font-serif text-xl font-bold text-[#0a1628]">Nek Mohammad</div>
+            <div class="text-gray-500 text-sm mb-3">Founder &amp; Director</div>
+            <div class="text-gray-500 text-sm mb-3">MBBS Education Orbit Fly</div>
+            <div class="flex justify-center gap-1">
+              <span class="text-yellow-400 text-lg">★★★★★</span>
+            </div>
+            <div class="text-xs text-gray-400 mt-1">Google Rated 5.0</div>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div data-aos="fade-left">
+          <blockquote class="relative pl-6 mb-8">
+            <div class="absolute left-0 top-0 bottom-0 w-1 bg-blue-600 rounded-full"></div>
+            <p class="text-xl lg:text-2xl font-serif italic text-blue-900 leading-relaxed">"Giving up is the only sure way to fail."</p>
+          </blockquote>
+
+          <div class="prose prose-gray max-w-none space-y-4 text-gray-600 leading-relaxed text-sm lg:text-base">
+            <p>Dear Aspiring Medical Students,</p>
+            <p>Welcome to MBBS Education Orbit Fly — your gateway to world-class medical education in Russia. My name is Nek Mohammad, and I founded this consultancy with a single purpose: to ensure that no deserving student in India is denied their dream of becoming a doctor due to financial constraints or lack of guidance.</p>
+            <p>Over the years, I have personally witnessed thousands of bright young minds struggle to secure MBBS seats in India because of astronomical fees, hidden donations, and an unfair system. Russia offers an extraordinary alternative — NMC-approved universities, English-medium education, world-class infrastructure, and fees that are a fraction of what private medical colleges in India charge.</p>
+            <p>At MBBS Education Orbit Fly, we don't just process paperwork. We walk with you through every single step — from choosing the right university based on your profile and budget, to the day you graduate and return to India as a qualified doctor. Our team of experienced counsellors, legal experts, and on-ground coordinators in Russia ensures you are never alone on this journey.</p>
+            <p>I always tell my students: <strong>"Giving up is the only sure way to fail."</strong> No matter how difficult the road ahead seems — a visa hurdle, a documentation challenge, homesickness thousands of miles from family — our team is available to support you at every step.</p>
+            <p>With 1000+ students successfully placed in top Russian medical universities, 9 branch offices across India, and a perfect 5-star Google rating, we have earned the trust of thousands of families. That trust is our greatest honor — and our greatest responsibility.</p>
+            <p>If you are serious about your medical career and want transparent, honest guidance — reach out to us today. Your future begins with a single step, and we are honored to take that step with you.</p>
+            <p>Warm regards and best wishes,</p>
+          </div>
+
+          <div class="mt-6 flex items-center gap-4">
+            <div>
+              <div class="font-serif text-xl font-bold text-[#0a1628]">Nek Mohammad</div>
+              <div class="text-gray-500 text-sm">Founder &amp; Director, MBBS Education Orbit Fly</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WHY CHOOSE US (6 cards) -->
+  <section class="py-16 lg:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-label">Why Us</span>
+        <h2 class="font-serif text-3xl lg:text-4xl font-bold text-[#0a1628] mb-3">Why Students Choose Us</h2>
+        <p class="text-gray-500 text-lg max-w-2xl mx-auto">More than a consultancy — a partner for 6 years</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="feature-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-13 h-13 w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fa-solid fa-shield-halved text-blue-700 text-xl"></i></div>
+          <h3 class="font-semibold text-[#0a1628] mb-2">5-Star Trusted Consultancy</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Verified 5.0 Google rating with 100+ genuine student reviews. No fake promises, no hidden charges — ever.</p>
+        </div>
+        <div class="feature-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="80">
+          <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4"><i class="fa-solid fa-graduation-cap text-green-700 text-xl"></i></div>
+          <h3 class="font-semibold text-[#0a1628] mb-2">9 Top Russian Universities</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Partnerships with NMC-approved, WHO-listed universities. We match you to the best fit based on your profile and budget.</p>
+        </div>
+        <div class="feature-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="160">
+          <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4"><i class="fa-solid fa-indian-rupee-sign text-yellow-600 text-xl"></i></div>
+          <h3 class="font-semibold text-[#0a1628] mb-2">Affordable Fees ₹2.5L–5.9L/year</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Most budget-friendly MBBS abroad. No donation. No capitation. Complete fee structure disclosed upfront.</p>
+        </div>
+        <div class="feature-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4"><i class="fa-solid fa-hands-holding-child text-purple-700 text-xl"></i></div>
+          <h3 class="font-semibold text-[#0a1628] mb-2">Complete 6-Year Support</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">From the application to graduation — we guide and support you through all 6 years of MBBS in Russia.</p>
+        </div>
+        <div class="feature-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="80">
+          <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4"><i class="fa-solid fa-passport text-red-600 text-xl"></i></div>
+          <h3 class="font-semibold text-[#0a1628] mb-2">100% Visa Success Rate</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Expert visa team with zero rejections. Complete documentation, invitation letter, and visa processing handled.</p>
+        </div>
+        <div class="feature-card bg-white rounded-2xl p-7 border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="160">
+          <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4"><i class="fa-solid fa-book-medical text-orange-600 text-xl"></i></div>
+          <h3 class="font-semibold text-[#0a1628] mb-2">FMGE Coaching Included</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Comprehensive FMGE/NExT preparation so you're fully equipped to practice in India after returning from Russia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CORE VALUES -->
+  <section class="py-16 bg-[#0a1628]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="inline-block text-yellow-400 font-semibold text-xs uppercase tracking-[0.18em] mb-3">What We Stand For</span>
+        <h2 class="font-serif text-3xl lg:text-4xl font-bold text-white">Our Core Values</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="value-card bg-white/10 border border-white/15 text-white" data-aos="fade-up" data-aos-delay="0">
+          <i class="fa-solid fa-eye text-yellow-400 text-3xl mb-5 block"></i>
+          <h3 class="font-semibold text-lg mb-3">Transparency</h3>
+          <p class="text-blue-200 text-sm leading-relaxed">Zero hidden fees. Every cost, every step, every timeline is disclosed upfront before you commit.</p>
+        </div>
+        <div class="value-card bg-white/10 border border-white/15 text-white" data-aos="fade-up" data-aos-delay="80">
+          <i class="fa-solid fa-heart text-yellow-400 text-3xl mb-5 block"></i>
+          <h3 class="font-semibold text-lg mb-3">Student First</h3>
+          <p class="text-blue-200 text-sm leading-relaxed">Personalized guidance for every student. We listen, understand, and recommend what's best for YOU — not what's easiest for us.</p>
+        </div>
+        <div class="value-card bg-white/10 border border-white/15 text-white" data-aos="fade-up" data-aos-delay="160">
+          <i class="fa-solid fa-star text-yellow-400 text-3xl mb-5 block"></i>
+          <h3 class="font-semibold text-lg mb-3">Reliability</h3>
+          <p class="text-blue-200 text-sm leading-relaxed">5-star rated for a reason. When we say we'll handle something, it gets handled. Our track record backs every promise we make.</p>
+        </div>
+        <div class="value-card bg-white/10 border border-white/15 text-white" data-aos="fade-up" data-aos-delay="240">
+          <i class="fa-solid fa-clock text-yellow-400 text-3xl mb-5 block"></i>
+          <h3 class="font-semibold text-lg mb-3">Long-term Care</h3>
+          <p class="text-blue-200 text-sm leading-relaxed">6 full years of support. We don't disappear after admission — we remain your partner through every year of your MBBS journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- STATS COUNTERS -->
+  <section class="py-14 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+        <div data-aos="fade-up" data-aos-delay="0">
+          <div class="text-4xl font-bold text-blue-900 mb-1"><span class="counter" data-target="1000" data-suffix="+">0</span></div>
+          <div class="text-gray-500 text-xs">Students Placed</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="60">
+          <div class="text-4xl font-bold text-blue-900 mb-1"><span class="counter" data-target="9" data-suffix="">0</span></div>
+          <div class="text-gray-500 text-xs">Partner Universities</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="120">
+          <div class="text-4xl font-bold text-blue-900 mb-1"><span class="counter" data-target="9" data-suffix="">0</span></div>
+          <div class="text-gray-500 text-xs">Branch Offices</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="180">
+          <div class="text-4xl font-bold text-yellow-500 mb-1">5.0★</div>
+          <div class="text-gray-500 text-xs">Google Rating</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="240">
+          <div class="text-4xl font-bold text-green-600 mb-1"><span class="counter" data-target="100" data-suffix="%">0</span></div>
+          <div class="text-gray-500 text-xs">Visa Success Rate</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <div class="text-4xl font-bold text-blue-900 mb-1"><span class="counter" data-target="6" data-suffix=" Yrs">0</span></div>
+          <div class="text-gray-500 text-xs">Ongoing Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-to-r from-blue-900 to-[#0a1628]" data-aos="fade-up">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-serif text-3xl lg:text-4xl font-bold text-white mb-4">Ready to Begin Your Medical Journey?</h2>
+      <p class="text-blue-200 text-lg mb-8">Talk to our expert counsellors for free. No obligation, just honest guidance.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button onclick="openModal()" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-400 hover:bg-yellow-300 text-[#0a1628] font-bold rounded-xl transition-all hover:-translate-y-1 shadow-lg">
+          <i class="fa-solid fa-graduation-cap"></i> Apply Now
+        </button>
+        <a href="https://wa.me/919410494695" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-500 hover:bg-green-400 text-white font-bold rounded-xl transition-all hover:-translate-y-1 shadow-lg">
+          <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-400 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <img src="assets/logo.png" alt="MBBS Education Orbit Fly" class="h-14 w-auto mb-4 brightness-0 invert" />
+          <p class="text-sm leading-relaxed mb-5 text-gray-500">Your trusted partner for MBBS admission in top Russian medical universities. Transparent, affordable, and fully supported.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-9 h-9 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-xs text-white"></i></a>
+            <a href="https://www.instagram.com/mbbs_education_orbit_fly" target="_blank" rel="noopener" class="w-9 h-9 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-500 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram text-xs text-white"></i></a>
+            <a href="https://wa.me/919410494695" target="_blank" rel="noopener" class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp text-xs text-white"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>About Us</a></li>
+            <li><a href="universities.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Universities</a></li>
+            <li><a href="process.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Admission Process</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Services</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Contact Us</a></li>
+            <li><a href="assets/brochure.pdf" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-download text-xs text-blue-500"></i>Download Brochure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Our Services</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Admission Assistance</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Visa Services</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Travel Booking</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Airport Pickup</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>FMGE Coaching</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Contact Us</h4>
+          <ul class="space-y-3 text-sm mb-5">
+            <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-blue-400 mt-0.5 flex-shrink-0"></i><span>West Guru Angad Nagar, Laxmi Nagar, Delhi - 110092</span></li>
+            <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-blue-400 flex-shrink-0"></i><a href="tel:+919410494695" class="hover:text-white transition-colors">+91 9410494695</a></li>
+            <li class="flex items-start gap-3"><i class="fa-solid fa-envelope text-blue-400 flex-shrink-0 mt-0.5"></i><a href="mailto:mbbseducationorbitfly@gmail.com" class="hover:text-white transition-colors break-all">mbbseducationorbitfly@gmail.com</a></li>
+          </ul>
+          <h5 class="text-white text-xs font-semibold uppercase tracking-widest mb-2">Branch Offices</h5>
+          <p class="text-gray-500 text-xs leading-relaxed">Meerut &bull; Saharanpur &bull; Deoband &bull; Muzaffarnagar &bull; Noida &bull; Gwalior &bull; Agra &bull; Faridabad &bull; Indore</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-600">
+        <span>&copy; 2025 MBBS Education Orbit Fly. All Rights Reserved.</span>
+        <span>Director: Nek Mohammad &mdash; Delhi, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919410494695" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 flex items-center justify-center" aria-label="WhatsApp">
+    <span class="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-60"></span>
+    <span class="relative w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-xl transition-colors"><i class="fa-brands fa-whatsapp text-white text-2xl"></i></span>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="fixed bottom-24 right-6 z-50 w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-blue-800" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- APPLY NOW MODAL -->
+  <div id="apply-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4" style="opacity:0;pointer-events:none;transition:opacity .25s ease">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeModal()"></div>
+    <div id="modal-box" class="relative bg-white rounded-3xl shadow-2xl w-full max-w-lg p-8" style="transform:scale(0.95);transition:transform .25s ease">
+      <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors"><i class="fa-solid fa-xmark"></i></button>
+      <div class="mb-6">
+        <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-4"><i class="fa-solid fa-graduation-cap text-blue-700 text-xl"></i></div>
+        <h3 class="font-serif text-2xl font-bold text-[#0a1628] mb-1">Apply Now</h3>
+        <p class="text-gray-500 text-sm">Get free consultation from our expert counsellors</p>
+      </div>
+      <form data-wa-form="Apply Now Modal" class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div><label class="text-xs font-medium text-gray-700 mb-1 block">Full Name *</label><input type="text" name="Name" placeholder="Your name" required class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+          <div><label class="text-xs font-medium text-gray-700 mb-1 block">Phone *</label><input type="tel" name="Phone" placeholder="+91 XXXXXXXXXX" required class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+        </div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Email</label><input type="email" name="Email" placeholder="your@email.com" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Preferred University</label>
+          <select name="University" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-gray-600">
+            <option value="">-- Select University --</option>
+            <option>Kabardino-Balkarian State University</option><option>Tver State Medical University</option><option>Yaroslavl State Medical University</option><option>Ivanovo State Medical University</option><option>North-Western State Medical University</option><option>Kazan State Medical University</option><option>Not Sure (Need Guidance)</option>
+          </select></div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Message</label><textarea rows="3" name="Message" placeholder="Any questions..." class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"></textarea></div>
+        <button type="submit" class="w-full py-3.5 bg-blue-900 text-white font-bold rounded-xl hover:bg-blue-800 transition-all shadow-lg text-sm">Submit Application &rarr;</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

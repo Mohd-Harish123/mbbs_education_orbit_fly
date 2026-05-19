@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =============================================
+   ROOT & BASE
+   ============================================= */
+:root {
+  --navy:  #0a1628;
+  --blue:  #1e3a8a;
+  --gold:  #f59e0b;
+}
+
+html { scroll-behavior: smooth; }
+
+body { font-family: 'Poppins', sans-serif; }
+
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 4px; }
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+#navbar {
+  transition: box-shadow 0.3s ease, height 0.3s ease;
+}
+#navbar.scrolled {
+  box-shadow: 0 4px 28px rgba(10, 22, 40, 0.14);
+}
+#navbar.scrolled #nav-logo {
+  height: 2.25rem;
+  transition: height 0.3s ease;
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 2px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 2px;
+  background: var(--blue);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+.nav-link:hover::after,
+.nav-link.active::after { width: 100%; }
+.nav-link.active { color: var(--blue); font-weight: 600; }
+
+/* =============================================
+   HERO SWIPER
+   ============================================= */
+.hero-swiper { width: 100%; height: 100%; }
+
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.06);
+  transition: transform 7s ease;
+}
+.swiper-slide-active .slide-bg { transform: scale(1); }
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(10,22,40,0.45) 0%,
+    rgba(10,22,40,0.65) 50%,
+    rgba(10,22,40,0.82) 100%
+  );
+}
+
+/* Hero text entrance animations */
+.hero-badge    { animation: fadeDown 0.8s ease 0.2s both; }
+.hero-heading  { animation: fadeUp  0.9s ease 0.45s both; }
+.hero-sub      { animation: fadeUp  0.9s ease 0.65s both; }
+.hero-btns     { animation: fadeUp  0.9s ease 0.85s both; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Arrow buttons */
+.hero-prev,
+.hero-next {
+  color: #fff !important;
+  background: rgba(255,255,255,0.18) !important;
+  width: 46px !important;
+  height: 46px !important;
+  border-radius: 50% !important;
+  backdrop-filter: blur(4px);
+  transition: background 0.3s;
+}
+.hero-prev:hover,
+.hero-next:hover { background: rgba(255,255,255,0.32) !important; }
+.hero-prev::after,
+.hero-next::after { font-size: 15px !important; font-weight: 700 !important; }
+
+/* Dots — pill style */
+.hero-dots .swiper-pagination-bullet {
+  background: rgba(255,255,255,0.5);
+  width: 8px; height: 8px;
+  opacity: 1;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+.hero-dots .swiper-pagination-bullet-active {
+  background: #fff;
+  width: 26px;
+  border-radius: 4px;
+}
+
+/* =============================================
+   FEATURE / WHY-CHOOSE CARDS
+   ============================================= */
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(10,22,40,0.11);
+}
+
+/* =============================================
+   DIRECTOR PHOTO — slow spin ring
+   ============================================= */
+.spin-slow {
+  animation: spinSlow 22s linear infinite;
+}
+@keyframes spinSlow {
+  from { transform: rotate(0deg);   }
+  to   { transform: rotate(360deg); }
+}
+
+/* =============================================
+   UNIVERSITY CARDS
+   ============================================= */
+.uni-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.uni-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 22px 44px rgba(10,22,40,0.12);
+}
+.uni-img {
+  transition: transform 0.55s ease;
+}
+.uni-card:hover .uni-img { transform: scale(1.09); }
+
+/* =============================================
+   ADMISSION PROCESS — step circles
+   ============================================= */
+.step-circle {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.step-card:hover .step-circle {
+  transform: scale(1.1);
+  box-shadow: 0 14px 28px rgba(30,58,138,0.28);
+}
+
+/* =============================================
+   SERVICE CARDS
+   ============================================= */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 36px rgba(10,22,40,0.1);
+}
+
+/* =============================================
+   TESTIMONIAL CARDS
+   ============================================= */
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(10,22,40,0.09);
+}
+
+/* Testimonial slider dots */
+.testimonials-dots {
+  bottom: 0 !important;
+}
+.testimonials-dots .swiper-pagination-bullet {
+  background: #cbd5e1;
+  opacity: 1;
+  width: 8px; height: 8px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.testimonials-dots .swiper-pagination-bullet-active {
+  background: var(--blue);
+  width: 22px;
+  border-radius: 4px;
+}
+
+/* Equal-height slides */
+.testimonials-swiper .swiper-slide { height: auto; }
+
+/* =============================================
+   MODAL
+   ============================================= */
+#apply-modal.open {
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
+#apply-modal.open #modal-box {
+  transform: scale(1) !important;
+}
+
+/* =============================================
+   BACK TO TOP
+   ============================================= */
+#back-to-top.visible {
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
+
+/* =============================================
+   AOS — prevent layout shift flash
+   ============================================= */
+[data-aos] { pointer-events: none; }
+[data-aos].aos-animate { pointer-events: auto; }
+
+/* =============================================
+   FONT SERIF UTILITY (Playfair Display)
+   Used where Tailwind font-serif is overridden
+   ============================================= */
+.font-serif { font-family: 'Playfair Display', Georgia, serif !important; }
+
+/* =============================================
+   FORM INPUTS — remove autofill yellow
+   ============================================= */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

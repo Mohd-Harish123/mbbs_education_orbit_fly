@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore NMC-recognised Russian medical universities partnered with MBBS Education Orbit Fly — detailed profiles, fees, rankings, and live search & filter." />
+  <meta property="og:title" content="Partner Universities | MBBS Education Orbit Fly" />
+  <meta property="og:description" content="9 NMC-recognised Russian medical universities with detailed fee, ranking, location and intake information. Search and filter to find your best match." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:type" content="website" />
+  <title>Partner Universities | MBBS Education Orbit Fly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Poppins','sans-serif'],serif:['"Playfair Display"','Georgia','serif']}}}}</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- TOP BAR -->
+  <div class="bg-[#0a1628] text-gray-300 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
+      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+        <a href="tel:+919410494695" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-solid fa-phone text-blue-400"></i> +91 9410494695</a>
+        <span class="text-gray-600 hidden sm:inline">|</span>
+        <a href="mailto:mbbseducationorbitfly@gmail.com" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-solid fa-envelope text-blue-400"></i> mbbseducationorbitfly@gmail.com</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="https://www.facebook.com/MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-6 h-6 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-600 transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="font-size:10px"></i></a>
+        <a href="https://www.instagram.com/mbbs_education_orbit_fly" target="_blank" rel="noopener" class="w-6 h-6 flex items-center justify-center rounded-full bg-white/10 hover:bg-pink-600 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram" style="font-size:10px"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex-shrink-0"><img src="assets/logo.png" alt="MBBS Education Orbit Fly" class="h-11 lg:h-14 w-auto object-contain" id="nav-logo" /></a>
+        <div class="hidden lg:flex items-center gap-0.5">
+          <a href="index.html"        class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Home</a>
+          <a href="about.html"        class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">About</a>
+          <a href="why-russia.html"   class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Why Russia</a>
+          <a href="universities.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Universities</a>
+          <a href="process.html"      class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Process</a>
+          <a href="services.html"     class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Services</a>
+          <a href="testimonials.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Testimonials</a>
+          <a href="contact.html"      class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 rounded-md">Contact</a>
+        </div>
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="assets/brochure.pdf" target="_blank" rel="noopener" class="px-4 py-2 text-sm font-medium text-blue-900 border border-blue-200 rounded-lg hover:bg-blue-50 transition-colors"><i class="fa-solid fa-download mr-1 text-xs"></i>Brochure</a>
+          <button onclick="openModal()" class="px-5 py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-lg hover:bg-blue-800 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">Apply Now &rarr;</button>
+        </div>
+        <button id="menu-btn" class="lg:hidden p-2 rounded-md text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition-colors" aria-label="Toggle menu">
+          <i id="icon-open" class="fa-solid fa-bars text-xl"></i>
+          <i id="icon-close" class="fa-solid fa-xmark text-xl hidden"></i>
+        </button>
+      </div>
+      <div id="mobile-menu" class="lg:hidden overflow-hidden border-t border-gray-100 bg-white" style="max-height:0;transition:max-height .35s ease">
+        <div class="py-3 space-y-0.5">
+          <a href="index.html"        class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Home</a>
+          <a href="about.html"        class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">About</a>
+          <a href="why-russia.html"   class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Why Russia</a>
+          <a href="universities.html" class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Universities</a>
+          <a href="process.html"      class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Process</a>
+          <a href="services.html"     class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Services</a>
+          <a href="testimonials.html" class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Testimonials</a>
+          <a href="contact.html"      class="nav-link block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-md mx-2 transition-colors">Contact</a>
+          <div class="px-4 pt-3 pb-4 flex flex-col gap-2">
+            <a href="assets/brochure.pdf" target="_blank" rel="noopener" class="block text-center py-2.5 border border-blue-200 text-blue-900 text-sm font-medium rounded-xl hover:bg-blue-50 transition-colors">Download Brochure</a>
+            <button onclick="openModal();closeMobileMenu()" class="w-full text-center py-3 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-colors shadow-sm">Apply Now &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero text-center">
+    <div class="page-hero-blob" style="width:400px;height:400px;top:-100px;right:-80px;background:rgba(37,99,235,.15)"></div>
+    <div class="page-hero-blob" style="width:280px;height:280px;bottom:-60px;left:-60px;background:rgba(245,158,11,.1)"></div>
+    <div class="relative z-10 max-w-3xl mx-auto" data-aos="fade-up">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep"><i class="fa-solid fa-chevron-right text-[9px]"></i></span>
+        <span class="current">Universities</span>
+      </nav>
+      <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+        Our Partner<br/><span class="text-yellow-400">Universities</span>
+      </h1>
+      <p class="text-blue-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
+        9 NMC-recognised Russian medical universities — handpicked for quality education, affordable fees, strong FMGE track record, and student safety.
+      </p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <span class="px-4 py-1.5 bg-white/10 border border-white/20 text-white text-xs font-medium rounded-full backdrop-blur-sm"><i class="fa-solid fa-shield-halved mr-1 text-yellow-400"></i> WHO &amp; NMC Recognised</span>
+        <span class="px-4 py-1.5 bg-white/10 border border-white/20 text-white text-xs font-medium rounded-full backdrop-blur-sm"><i class="fa-solid fa-language mr-1 text-yellow-400"></i> English Medium</span>
+        <span class="px-4 py-1.5 bg-white/10 border border-white/20 text-white text-xs font-medium rounded-full backdrop-blur-sm"><i class="fa-solid fa-indian-rupee-sign mr-1 text-yellow-400"></i> From ₹3.5L / Year</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH & FILTER -->
+  <section class="py-10 bg-white border-b border-gray-100 sticky top-16 lg:top-20 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row gap-4 items-center justify-between">
+        <!-- Search -->
+        <div class="relative w-full sm:w-72">
+          <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+          <input type="text" id="uni-search" placeholder="Search university or city…" class="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" />
+        </div>
+        <!-- Filter pills -->
+        <div class="flex gap-2 flex-wrap justify-center">
+          <button class="uni-filter-btn active" data-filter="all">All Universities</button>
+          <button class="uni-filter-btn" data-filter="budget">Budget-Friendly</button>
+          <button class="uni-filter-btn" data-filter="top-ranked">Top Ranked</button>
+          <button class="uni-filter-btn" data-filter="metro">Near Metro</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIVERSITIES GRID -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="uni-grid">
+
+        <!-- 1. Kabardino-Balkarian State University -->
+        <div class="uni-card-item" data-tags="all budget" data-name="kabardino-balkarian state university" data-city="nalchik" data-aos="fade-up" data-aos-delay="0">
+          <div class="uni-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+            <div class="overflow-hidden h-48 relative">
+              <img src="https://picsum.photos/seed/kbsu/640/360" alt="Kabardino-Balkarian State University" class="w-full h-full object-cover uni-img" loading="lazy" />
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">NMC Approved</span>
+                <span class="bg-yellow-400 text-[#0a1628] text-[10px] font-bold px-2.5 py-1 rounded-full">Budget Pick</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs text-gray-500 mb-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Nalchik, Kabardino-Balkaria</div>
+              <h3 class="font-semibold text-[#0a1628] text-lg leading-snug mb-3">Kabardino-Balkarian State University</h3>
+              <div class="grid grid-cols-3 gap-2 mb-4">
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">₹3.5L</div>
+                  <div class="text-gray-500 text-[10px]">Per Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">1957</div>
+                  <div class="text-gray-500 text-[10px]">Est. Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">English</div>
+                  <div class="text-gray-500 text-[10px]">Medium</div>
+                </div>
+              </div>
+              <ul class="space-y-1.5 mb-5">
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Listed in WHO Directory of Medical Schools</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Strong FMGE pass rate among our students</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>University hostel with Indian food facility</li>
+              </ul>
+              <button onclick="openModal()" class="w-full py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-all">Apply for This University &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Tver State Medical University -->
+        <div class="uni-card-item" data-tags="all top-ranked" data-name="tver state medical university" data-city="tver" data-aos="fade-up" data-aos-delay="80">
+          <div class="uni-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+            <div class="overflow-hidden h-48 relative">
+              <img src="https://picsum.photos/seed/tversmu/640/360" alt="Tver State Medical University" class="w-full h-full object-cover uni-img" loading="lazy" />
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">NMC Approved</span>
+                <span class="bg-blue-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Top Ranked</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs text-gray-500 mb-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Tver, Central Russia</div>
+              <h3 class="font-semibold text-[#0a1628] text-lg leading-snug mb-3">Tver State Medical University</h3>
+              <div class="grid grid-cols-3 gap-2 mb-4">
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">₹4.2L</div>
+                  <div class="text-gray-500 text-[10px]">Per Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">1936</div>
+                  <div class="text-gray-500 text-[10px]">Est. Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">English</div>
+                  <div class="text-gray-500 text-[10px]">Medium</div>
+                </div>
+              </div>
+              <ul class="space-y-1.5 mb-5">
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>1200-bed regional clinical hospital for training</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>One of Russia's oldest medical universities</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>2.5 hrs from Moscow by train</li>
+              </ul>
+              <button onclick="openModal()" class="w-full py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-all">Apply for This University &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Yaroslavl State Medical University -->
+        <div class="uni-card-item" data-tags="all top-ranked" data-name="yaroslavl state medical university" data-city="yaroslavl" data-aos="fade-up" data-aos-delay="160">
+          <div class="uni-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+            <div class="overflow-hidden h-48 relative">
+              <img src="https://picsum.photos/seed/ysmu/640/360" alt="Yaroslavl State Medical University" class="w-full h-full object-cover uni-img" loading="lazy" />
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">NMC Approved</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs text-gray-500 mb-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Yaroslavl, Golden Ring Region</div>
+              <h3 class="font-semibold text-[#0a1628] text-lg leading-snug mb-3">Yaroslavl State Medical University</h3>
+              <div class="grid grid-cols-3 gap-2 mb-4">
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">₹4.0L</div>
+                  <div class="text-gray-500 text-[10px]">Per Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">1944</div>
+                  <div class="text-gray-500 text-[10px]">Est. Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">English</div>
+                  <div class="text-gray-500 text-[10px]">Medium</div>
+                </div>
+              </div>
+              <ul class="space-y-1.5 mb-5">
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Located in UNESCO World Heritage city</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Modern simulation centre with latest equipment</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>3 hrs from Moscow, very safe student city</li>
+              </ul>
+              <button onclick="openModal()" class="w-full py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-all">Apply for This University &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Ivanovo State Medical University -->
+        <div class="uni-card-item" data-tags="all budget" data-name="ivanovo state medical university" data-city="ivanovo" data-aos="fade-up" data-aos-delay="0">
+          <div class="uni-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+            <div class="overflow-hidden h-48 relative">
+              <img src="https://picsum.photos/seed/isma/640/360" alt="Ivanovo State Medical University" class="w-full h-full object-cover uni-img" loading="lazy" />
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">NMC Approved</span>
+                <span class="bg-yellow-400 text-[#0a1628] text-[10px] font-bold px-2.5 py-1 rounded-full">Budget Pick</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs text-gray-500 mb-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Ivanovo, Central Federal District</div>
+              <h3 class="font-semibold text-[#0a1628] text-lg leading-snug mb-3">Ivanovo State Medical University</h3>
+              <div class="grid grid-cols-3 gap-2 mb-4">
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">₹3.8L</div>
+                  <div class="text-gray-500 text-[10px]">Per Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">1930</div>
+                  <div class="text-gray-500 text-[10px]">Est. Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">English</div>
+                  <div class="text-gray-500 text-[10px]">Medium</div>
+                </div>
+              </div>
+              <ul class="space-y-1.5 mb-5">
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Ministry of Health accredited institution</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>One of Russia's most affordable medical universities</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Large Indian student community on campus</li>
+              </ul>
+              <button onclick="openModal()" class="w-full py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-all">Apply for This University &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. North-Western State Medical University -->
+        <div class="uni-card-item" data-tags="all top-ranked metro" data-name="north-western state medical university" data-city="saint petersburg" data-aos="fade-up" data-aos-delay="80">
+          <div class="uni-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+            <div class="overflow-hidden h-48 relative">
+              <img src="https://picsum.photos/seed/nwsmu/640/360" alt="North-Western State Medical University" class="w-full h-full object-cover uni-img" loading="lazy" />
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">NMC Approved</span>
+                <span class="bg-blue-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Top Ranked</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs text-gray-500 mb-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Saint Petersburg</div>
+              <h3 class="font-semibold text-[#0a1628] text-lg leading-snug mb-3">North-Western State Medical University</h3>
+              <div class="grid grid-cols-3 gap-2 mb-4">
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">₹4.8L</div>
+                  <div class="text-gray-500 text-[10px]">Per Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">2011</div>
+                  <div class="text-gray-500 text-[10px]">Est. Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">English</div>
+                  <div class="text-gray-500 text-[10px]">Medium</div>
+                </div>
+              </div>
+              <ul class="space-y-1.5 mb-5">
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Located in Russia's cultural capital, St. Petersburg</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Named after I.I. Mechnikov — renowned immunologist</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Excellent clinical exposure in major city hospitals</li>
+              </ul>
+              <button onclick="openModal()" class="w-full py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-all">Apply for This University &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Kazan State Medical University -->
+        <div class="uni-card-item" data-tags="all top-ranked metro" data-name="kazan state medical university" data-city="kazan" data-aos="fade-up" data-aos-delay="160">
+          <div class="uni-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+            <div class="overflow-hidden h-48 relative">
+              <img src="https://picsum.photos/seed/ksmu/640/360" alt="Kazan State Medical University" class="w-full h-full object-cover uni-img" loading="lazy" />
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">NMC Approved</span>
+                <span class="bg-blue-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Top Ranked</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs text-gray-500 mb-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Kazan, Tatarstan Republic</div>
+              <h3 class="font-semibold text-[#0a1628] text-lg leading-snug mb-3">Kazan State Medical University</h3>
+              <div class="grid grid-cols-3 gap-2 mb-4">
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">₹5.0L</div>
+                  <div class="text-gray-500 text-[10px]">Per Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">1814</div>
+                  <div class="text-gray-500 text-[10px]">Est. Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">English</div>
+                  <div class="text-gray-500 text-[10px]">Medium</div>
+                </div>
+              </div>
+              <ul class="space-y-1.5 mb-5">
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>One of Russia's oldest universities (est. 1814)</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Muslim-friendly city with halal food widely available</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>High FMGE success rate among graduates</li>
+              </ul>
+              <button onclick="openModal()" class="w-full py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-all">Apply for This University &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Volgograd State Medical University -->
+        <div class="uni-card-item" data-tags="all budget top-ranked" data-name="volgograd state medical university" data-city="volgograd" data-aos="fade-up" data-aos-delay="0">
+          <div class="uni-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+            <div class="overflow-hidden h-48 relative">
+              <img src="https://picsum.photos/seed/volgomed/640/360" alt="Volgograd State Medical University" class="w-full h-full object-cover uni-img" loading="lazy" />
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">NMC Approved</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs text-gray-500 mb-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Volgograd, Southern Russia</div>
+              <h3 class="font-semibold text-[#0a1628] text-lg leading-snug mb-3">Volgograd State Medical University</h3>
+              <div class="grid grid-cols-3 gap-2 mb-4">
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">₹3.9L</div>
+                  <div class="text-gray-500 text-[10px]">Per Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">1935</div>
+                  <div class="text-gray-500 text-[10px]">Est. Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">English</div>
+                  <div class="text-gray-500 text-[10px]">Medium</div>
+                </div>
+              </div>
+              <ul class="space-y-1.5 mb-5">
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Warm climate — milder winters than most Russian cities</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>12 clinical departments with 3000+ bed hospital</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Consistently good FMGE results from our students</li>
+              </ul>
+              <button onclick="openModal()" class="w-full py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-all">Apply for This University &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Orenburg State Medical University -->
+        <div class="uni-card-item" data-tags="all budget" data-name="orenburg state medical university" data-city="orenburg" data-aos="fade-up" data-aos-delay="80">
+          <div class="uni-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+            <div class="overflow-hidden h-48 relative">
+              <img src="https://picsum.photos/seed/orgmu/640/360" alt="Orenburg State Medical University" class="w-full h-full object-cover uni-img" loading="lazy" />
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">NMC Approved</span>
+                <span class="bg-yellow-400 text-[#0a1628] text-[10px] font-bold px-2.5 py-1 rounded-full">Budget Pick</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs text-gray-500 mb-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Orenburg, Ural Region</div>
+              <h3 class="font-semibold text-[#0a1628] text-lg leading-snug mb-3">Orenburg State Medical University</h3>
+              <div class="grid grid-cols-3 gap-2 mb-4">
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">₹3.6L</div>
+                  <div class="text-gray-500 text-[10px]">Per Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">1944</div>
+                  <div class="text-gray-500 text-[10px]">Est. Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">English</div>
+                  <div class="text-gray-500 text-[10px]">Medium</div>
+                </div>
+              </div>
+              <ul class="space-y-1.5 mb-5">
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Gateway city between Europe and Asia</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Very low cost of living compared to other cities</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Indian Student Association actively present</li>
+              </ul>
+              <button onclick="openModal()" class="w-full py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-all">Apply for This University &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Rostov State Medical University -->
+        <div class="uni-card-item" data-tags="all top-ranked metro" data-name="rostov state medical university" data-city="rostov-on-don" data-aos="fade-up" data-aos-delay="160">
+          <div class="uni-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+            <div class="overflow-hidden h-48 relative">
+              <img src="https://picsum.photos/seed/rostovmed/640/360" alt="Rostov State Medical University" class="w-full h-full object-cover uni-img" loading="lazy" />
+              <div class="absolute top-3 left-3 flex gap-2">
+                <span class="bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">NMC Approved</span>
+                <span class="bg-blue-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Top Ranked</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-xs text-gray-500 mb-2"><i class="fa-solid fa-location-dot text-blue-500"></i> Rostov-on-Don, Southern Russia</div>
+              <h3 class="font-semibold text-[#0a1628] text-lg leading-snug mb-3">Rostov State Medical University</h3>
+              <div class="grid grid-cols-3 gap-2 mb-4">
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">₹4.5L</div>
+                  <div class="text-gray-500 text-[10px]">Per Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">1930</div>
+                  <div class="text-gray-500 text-[10px]">Est. Year</div>
+                </div>
+                <div class="text-center bg-blue-50 rounded-xl py-2.5">
+                  <div class="text-[#1e3a8a] font-bold text-sm">English</div>
+                  <div class="text-gray-500 text-[10px]">Medium</div>
+                </div>
+              </div>
+              <ul class="space-y-1.5 mb-5">
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>One of Russia's largest medical universities</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Mild climate — closest to Indian weather conditions</li>
+                <li class="flex items-center gap-2 text-xs text-gray-600"><i class="fa-solid fa-circle-check text-green-500 flex-shrink-0"></i>Vibrant city with active Indian student life</li>
+              </ul>
+              <button onclick="openModal()" class="w-full py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-all">Apply for This University &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No results message -->
+      <div id="no-results" class="hidden text-center py-20">
+        <i class="fa-solid fa-magnifying-glass text-gray-300 text-5xl mb-4"></i>
+        <p class="text-gray-500 font-medium">No universities found. Try a different search or filter.</p>
+        <button onclick="document.getElementById('uni-search').value='';document.querySelector('.uni-filter-btn[data-filter=all]').click()" class="mt-4 px-6 py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-xl hover:bg-blue-800 transition-all">Clear Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON CTA -->
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+      <span class="section-label">Need Help Deciding?</span>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#0a1628] leading-tight mb-4">Not Sure Which University to Choose?</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">Our counsellors analyse your NEET score, budget, preferred city climate, and career goals to recommend the university that fits you best — for free.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <button onclick="openModal()" class="px-8 py-3.5 bg-blue-900 text-white font-bold rounded-xl hover:bg-blue-800 transition-all shadow-lg text-sm">Get Personalised Recommendation &rarr;</button>
+        <a href="why-russia.html#compare" class="px-8 py-3.5 border border-blue-200 text-blue-900 font-semibold rounded-xl hover:bg-blue-50 transition-all text-sm">See India vs Russia Comparison</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0a1628] text-gray-400 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <img src="assets/logo.png" alt="MBBS Education Orbit Fly" class="h-14 w-auto object-contain mb-5 brightness-0 invert" />
+          <p class="text-sm leading-relaxed mb-5">India's trusted MBBS abroad consultancy — 1000+ students placed in top Russian medical universities since 2010.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+            <a href="https://www.instagram.com/mbbs_education_orbit_fly" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-pink-600 rounded-lg flex items-center justify-center transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram text-sm"></i></a>
+            <a href="https://wa.me/919410494695" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp text-sm"></i></a>
+            <a href="https://www.youtube.com/@MBBSEducationOrbitFly" target="_blank" rel="noopener" class="w-9 h-9 bg-white/10 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors" aria-label="YouTube"><i class="fa-brands fa-youtube text-sm"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>About Us</a></li>
+            <li><a href="universities.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Universities</a></li>
+            <li><a href="process.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Admission Process</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Services</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Our Services</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Admission Assistance</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Visa Services</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Travel Booking</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>Airport Pickup</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-blue-500"></i>FMGE Coaching</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-base mb-5">Contact Us</h4>
+          <ul class="space-y-3 text-sm mb-5">
+            <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-blue-400 mt-0.5 flex-shrink-0"></i><span>West Guru Angad Nagar, Laxmi Nagar, Delhi - 110092</span></li>
+            <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-blue-400 flex-shrink-0"></i><a href="tel:+919410494695" class="hover:text-white transition-colors">+91 9410494695</a></li>
+            <li class="flex items-start gap-3"><i class="fa-solid fa-envelope text-blue-400 flex-shrink-0 mt-0.5"></i><a href="mailto:mbbseducationorbitfly@gmail.com" class="hover:text-white transition-colors break-all">mbbseducationorbitfly@gmail.com</a></li>
+          </ul>
+          <h5 class="text-white text-xs font-semibold uppercase tracking-widest mb-2">Branch Offices</h5>
+          <p class="text-gray-500 text-xs leading-relaxed">Meerut &bull; Saharanpur &bull; Deoband &bull; Muzaffarnagar &bull; Noida &bull; Gwalior &bull; Agra &bull; Faridabad &bull; Indore</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-600">
+        <span>&copy; 2025 MBBS Education Orbit Fly. All Rights Reserved.</span>
+        <span>Director: Nek Mohammad &mdash; Delhi, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919410494695" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 flex items-center justify-center" aria-label="WhatsApp">
+    <span class="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-60"></span>
+    <span class="relative w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-xl transition-colors"><i class="fa-brands fa-whatsapp text-white text-2xl"></i></span>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="fixed bottom-24 right-6 z-50 w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-blue-800" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- APPLY NOW MODAL -->
+  <div id="apply-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4" style="opacity:0;pointer-events:none;transition:opacity .25s ease">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeModal()"></div>
+    <div id="modal-box" class="relative bg-white rounded-3xl shadow-2xl w-full max-w-lg p-8" style="transform:scale(0.95);transition:transform .25s ease">
+      <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors"><i class="fa-solid fa-xmark"></i></button>
+      <div class="mb-6">
+        <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-4"><i class="fa-solid fa-graduation-cap text-blue-700 text-xl"></i></div>
+        <h3 class="font-serif text-2xl font-bold text-[#0a1628] mb-1">Apply Now</h3>
+        <p class="text-gray-500 text-sm">Get free consultation from our expert counsellors</p>
+      </div>
+      <form data-wa-form="Apply Now Modal" class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div><label class="text-xs font-medium text-gray-700 mb-1 block">Full Name *</label><input type="text" name="Name" placeholder="Your name" required class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+          <div><label class="text-xs font-medium text-gray-700 mb-1 block">Phone *</label><input type="tel" name="Phone" placeholder="+91 XXXXXXXXXX" required class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+        </div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Email</label><input type="email" name="Email" placeholder="your@email.com" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" /></div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Preferred University</label>
+          <select name="University" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-gray-600">
+            <option value="">-- Select University --</option>
+            <option>Kabardino-Balkarian State University</option><option>Tver State Medical University</option><option>Yaroslavl State Medical University</option><option>Ivanovo State Medical University</option><option>North-Western State Medical University</option><option>Kazan State Medical University</option><option>Volgograd State Medical University</option><option>Orenburg State Medical University</option><option>Rostov State Medical University</option><option>Not Sure (Need Guidance)</option>
+          </select></div>
+        <div><label class="text-xs font-medium text-gray-700 mb-1 block">Message</label><textarea rows="3" name="Message" placeholder="Any questions..." class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"></textarea></div>
+        <button type="submit" class="w-full py-3.5 bg-blue-900 text-white font-bold rounded-xl hover:bg-blue-800 transition-all shadow-lg text-sm">Submit Application &rarr;</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Show/hide no-results message
+    const observer = new MutationObserver(() => {
+      const visible = Array.from(document.querySelectorAll('.uni-card-item')).some(el => el.style.display !== 'none');
+      document.getElementById('no-results').classList.toggle('hidden', visible);
+    });
+    document.querySelectorAll('.uni-card-item').forEach(el => observer.observe(el, { attributes: true, attributeFilter: ['style'] }));
+  </script>
+</body>
+</html>
